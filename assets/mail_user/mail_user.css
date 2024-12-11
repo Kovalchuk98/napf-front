@@ -1,0 +1,532 @@
+.vote_button,
+.publicate_button,
+.cancel_button {
+  background-color: #5979C4;
+  margin-left: 16px;
+  padding: 8px 10px;
+}
+.vote_button img,
+.publicate_button img,
+.cancel_button img {
+  margin-right: 10px;
+}
+.vote_button p,
+.publicate_button p,
+.cancel_button p {
+  font-weight: 500;
+  font-size: 18px;
+}
+.vote_button:hover,
+.publicate_button:hover,
+.cancel_button:hover {
+  background-color: #879FD6;
+}
+.vote_button.publicate_button img, .vote_button.cancel_button img,
+.publicate_button.publicate_button img,
+.publicate_button.cancel_button img,
+.cancel_button.publicate_button img,
+.cancel_button.cancel_button img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1096%) hue-rotate(266deg) brightness(117%) contrast(100%);
+}
+
+.mail_user_bottom_operations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mail_user_block .mail_user_wrapper .page_title {
+  margin-bottom: 44px;
+}
+.mail_user_block .mail_user_wrapper .mail_title {
+  margin-bottom: 44px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.mail_user_block .mail_user_wrapper .mail_text p {
+  font-size: 18px;
+}
+.mail_user_block .mail_user_wrapper .mail_dates_wrapper {
+  margin-bottom: 22px;
+}
+.mail_user_block .mail_user_wrapper .mail_dates_wrapper .mail_date {
+  display: flex;
+  align-items: center;
+}
+.mail_user_block .mail_user_wrapper .mail_dates_wrapper .mail_date img,
+.mail_user_block .mail_user_wrapper .mail_dates_wrapper .mail_date svg {
+  width: 20px;
+  margin-right: 10px;
+}
+.mail_user_block .mail_user_wrapper .mail_dates_wrapper .mail_date span {
+  font-size: 16px;
+}
+.mail_user_block .mail_user_wrapper .mail_dates_wrapper .mail_date:not(:first-child) {
+  margin-left: 6px;
+}
+.mail_user_block .mail_user_wrapper .mail_materials_wrapper {
+  margin-top: 30px;
+}
+.mail_user_block .mail_user_wrapper .mail_materials_wrapper .materials_list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  padding-bottom: 0px;
+  border-bottom: none;
+}
+.mail_user_block .mail_user_wrapper .mail_materials_wrapper .materials_list .materials_list_item {
+  background-color: #F3F4F8;
+  padding: 5px 10px;
+}
+.mail_user_block .mail_user_wrapper .mail_materials_wrapper .materials_list .materials_list_item .document_icon {
+  margin: 0px 10px 0px 0px;
+  width: 24px;
+}
+.mail_user_block .mail_user_wrapper .mail_materials_wrapper .materials_list .materials_list_item .document_info_wrapper,
+.mail_user_block .mail_user_wrapper .mail_materials_wrapper .materials_list .materials_list_item .material_info_wrapper {
+  border-bottom: none;
+}
+.mail_user_block .mail_user_wrapper .mail_materials_wrapper .materials_list .materials_list_item .document_info_wrapper .document_info_title,
+.mail_user_block .mail_user_wrapper .mail_materials_wrapper .materials_list .materials_list_item .material_info_wrapper .document_info_title {
+  margin: 0px 18px 0px 18px;
+}
+.mail_user_block .mail_user_wrapper .mail_materials_wrapper .materials_list .materials_list_item .document_info_wrapper .document_link p,
+.mail_user_block .mail_user_wrapper .mail_materials_wrapper .materials_list .materials_list_item .material_info_wrapper .document_link p {
+  margin-top: 0px;
+}
+.mail_user_block .mail_user_wrapper .mail_materials_wrapper .materials_list .materials_list_item .document_info_wrapper .document_link.block_link_filled .document_link_icon,
+.mail_user_block .mail_user_wrapper .mail_materials_wrapper .materials_list .materials_list_item .material_info_wrapper .document_link.block_link_filled .document_link_icon {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1096%) hue-rotate(266deg) brightness(117%) contrast(100%);
+}
+.mail_user_block .mail_user_wrapper .mail_materials_wrapper .materials_list .materials_list_item.document_compact .document_info_wrapper {
+  padding: 0px;
+}
+.mail_user_block .mail_user_wrapper .mail_materials_wrapper .materials_list .materials_list_item.document_compact .document_info_wrapper .document_link {
+  padding: 8px 0px 8px 8px;
+  margin-top: 0px;
+}
+.mail_user_block .mail_user_wrapper .mail_materials_wrapper .mail_upload_wrapper {
+  padding-bottom: 0px;
+  border-bottom: none;
+}
+.mail_user_block .mail_user_wrapper .mail_materials_main_wrapper .materials_list {
+  margin-top: 25px;
+}
+.mail_user_block .mail_user_wrapper.closed_mail .mail_title,
+.mail_user_block .mail_user_wrapper.closed_mail .page_title {
+  color: #90A4AF !important;
+}
+.mail_user_block .mail_user_wrapper.closed_mail .mail_dates_wrapper .mail_date.publication_date {
+  display: none;
+}
+.mail_user_block .mail_user_wrapper.closed_mail .mail_dates_wrapper .mail_date.control_date {
+  color: #90A4AF;
+}
+.mail_user_block .mail_user_wrapper.closed_mail .mail_dates_wrapper .mail_date.control_date img,
+.mail_user_block .mail_user_wrapper.closed_mail .mail_dates_wrapper .mail_date.control_date svg {
+  display: none;
+}
+.mail_user_block .mail_user_wrapper.closed_mail .mail_dates_wrapper .mail_date.closed_mailing {
+  color: #FF8409;
+}
+.mail_user_block .mail_user_vote {
+  padding: 20px 15px;
+  border: 1px solid #5979C4;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+.mail_user_block .mail_user_vote h4 {
+  color: #879FD6;
+}
+.mail_user_block .mail_user_vote .mail_user_vote_wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.mail_user_block .mail_user_vote .mail_user_vote_wrapper .mail_user_radio_list {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 40px;
+}
+.mail_user_block .mail_user_vote .mail_user_vote_wrapper .mail_user_radio_list h4 {
+  color: #253238;
+}
+.mail_user_block .mail_user_comments .mail_user_comment_create {
+  margin-top: 30px;
+}
+.mail_user_block .mail_user_comments .mail_user_comment_create .comment_create_wrapper .comment_create_header {
+  padding: 10px 6px;
+  background-color: #F3F4F8;
+}
+.mail_user_block .mail_user_comments .mail_user_comment_create .comment_create_wrapper .comment_create_header .comment_create_title_wrapper {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+.mail_user_block .mail_user_comments .mail_user_comment_create .comment_create_wrapper .comment_create_header .comment_create_title_wrapper img {
+  width: 36px;
+  margin-right: 10px;
+}
+.mail_user_block .mail_user_comments .mail_user_comment_create .comment_create_wrapper .comment_create_header .comment_create_title_wrapper p {
+  font-size: 18px;
+  font-weight: 700;
+}
+.mail_user_block .mail_user_comments .mail_user_comment_create .comment_create_wrapper .comment_create_header .comment_create_title_wrapper::after {
+  right: 30px;
+  content: url("../../icons/tag_arrow.svg");
+  transform: rotate(90deg) scale(1.4);
+}
+.mail_user_block .mail_user_comments .mail_user_comment_create .comment_create_wrapper .comment_create_header:not(.active_accordion):hover {
+  background-color: #5979C4;
+}
+.mail_user_block .mail_user_comments .mail_user_comment_create .comment_create_wrapper .comment_create_header:not(.active_accordion):hover .comment_create_title_wrapper p {
+  color: #ffffff;
+}
+.mail_user_block .mail_user_comments .mail_user_comment_create .comment_create_wrapper .comment_create_header:not(.active_accordion):hover .comment_create_title_wrapper img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1096%) hue-rotate(266deg) brightness(117%) contrast(100%);
+}
+.mail_user_block .mail_user_comments .mail_user_comment_create .comment_create_wrapper .comment_create_header:not(.active_accordion):hover .comment_create_title_wrapper::after {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1096%) hue-rotate(266deg) brightness(117%) contrast(100%);
+}
+.mail_user_block .mail_user_comments .mail_user_comment_create .comment_create_wrapper .comment_create_header.active_accordion .comment_create_title_wrapper::after {
+  transform: rotate(270deg) scale(1.4);
+  filter: none;
+}
+.mail_user_block .mail_user_comments .mail_user_comment_create .comment_create_wrapper .comment_create_content {
+  background-color: #F3F4F8;
+}
+.mail_user_block .mail_user_comments .mail_user_comment_create .comment_create_wrapper .comment_create_content .comment_create_content_wrapper {
+  padding: 18px 18px 26px 52px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mail_user_block .mail_user_comments .mail_user_comment_create .comment_create_wrapper .comment_create_content .comment_create_content_wrapper .comment_input_name {
+  padding: 5px 10px;
+  border-width: 1px;
+  border-radius: 4px;
+}
+.mail_user_block .mail_user_comments .mail_user_comment_create .comment_create_wrapper .comment_create_content .comment_create_content_wrapper .default_textarea {
+  margin-top: 20px;
+  display: flex;
+  font-size: 18px;
+  flex: 1;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-top: 1px solid #879FD6;
+  border-bottom: 1px solid #879FD6;
+}
+.mail_user_block .mail_user_comments .mail_user_comment_create .comment_create_wrapper .comment_create_content .comment_create_content_wrapper .mail_materials_wrapper {
+  margin-top: 0px;
+  padding-top: 20px;
+  background-color: #ffffff;
+}
+.mail_user_block .mail_user_comments .mail_user_comment_create .comment_create_wrapper .comment_create_content .comment_create_content_wrapper .mail_materials_wrapper .materials_list {
+  margin-top: 0px;
+  padding-bottom: 0px;
+  border-bottom: none;
+  margin: 10px;
+}
+.mail_user_block .mail_user_comments .mail_user_comment_create .comment_create_wrapper .comment_create_content .comment_create_content_wrapper .mail_materials_wrapper .materials_list .materials_list_item {
+  padding: 5px 10px;
+}
+.mail_user_block .mail_user_comments .mail_user_comment_create .comment_create_wrapper .comment_create_content .comment_create_content_wrapper .mail_materials_wrapper .materials_list .materials_list_item .document_icon {
+  width: 24px;
+}
+.mail_user_block .mail_user_comments .mail_user_comment_create .comment_create_wrapper .comment_create_content .comment_create_content_wrapper .mail_materials_wrapper .materials_list .materials_list_item .document_info_wrapper .document_info_title {
+  margin-left: 18px;
+}
+.mail_user_block .mail_user_comments .mail_user_comment_create .comment_create_wrapper .comment_create_content .comment_create_content_wrapper .mail_materials_wrapper .mail_upload_wrapper {
+  padding: 0px 10px 30px 10px;
+}
+.mail_user_block .mail_user_comments .mail_user_comment_create .comment_create_wrapper .comment_create_content .comment_create_content_wrapper .mail_user_bottom_operations {
+  margin-top: 20px;
+}
+.mail_user_block .mail_user_comments .mail_user_comment_create .comment_create_wrapper .comment_create_content .comment_create_content_wrapper .mail_user_bottom_operations .publicate_button img {
+  width: 22px;
+}
+.mail_user_block .mail_user_comments .mail_user_comments_wrapper {
+  margin-top: 40px;
+}
+.mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 36px;
+}
+.mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper {
+  border-top: 1px solid #879FD6;
+  margin-top: 0px;
+  padding: 26px 26px 35px 26px;
+}
+.mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper:last-child {
+  border-bottom: 1px solid #879FD6;
+}
+.mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper .mail_user_header_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper .mail_user_header_wrapper .mail_user_header_info .mail_user_name {
+  margin-bottom: 26px;
+}
+.mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper .mail_user_header_wrapper .mail_user_header_info .mail_dates_wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper .mail_user_header_wrapper .comment_item_operations {
+  padding: 0px 0px 0px 26px;
+}
+.mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper .mail_user_header_wrapper .comment_item_operations a {
+  display: flex;
+  margin: auto;
+  height: fit-content;
+  align-items: center;
+}
+.mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper .mail_user_textarea {
+  display: none;
+  margin-top: 20px;
+  font-size: 18px;
+  flex: 1;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-top: 1px solid #879FD6;
+  border-bottom: 1px solid #879FD6;
+}
+.mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper .materials_list .materials_list_item .operations_wrapper {
+  display: none;
+}
+.mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper.editable_user_wrapper .mail_materials_wrapper .mail_upload_wrapper {
+  display: none;
+}
+.mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper.edit_wrapper .mail_user_header_wrapper .operations_wrapper .operations_list .comment_edit_button {
+  pointer-events: none;
+  visibility: hidden;
+}
+.mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper.edit_wrapper .mail_text {
+  display: none;
+}
+.mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper.edit_wrapper .mail_user_textarea {
+  display: block;
+  margin-top: 0px;
+}
+.mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper.edit_wrapper .mail_materials_wrapper {
+  display: block;
+}
+.mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper.edit_wrapper .mail_materials_wrapper .materials_list .materials_list_item .document_link {
+  display: none;
+}
+.mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper.edit_wrapper .mail_materials_wrapper .materials_list .materials_list_item .operations_wrapper {
+  display: block;
+}
+.mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper.edit_wrapper .mail_materials_wrapper .mail_upload_wrapper {
+  display: flex;
+}
+.mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper.edit_wrapper .mail_user_bottom_operations {
+  display: flex;
+}
+.mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper .mail_user_bottom_operations {
+  display: none;
+  margin-top: 20px;
+}
+.mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper .mail_user_bottom_operations .publicate_button {
+  display: flex;
+}
+.mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper .mail_user_bottom_operations .publicate_button img {
+  width: 22px;
+}
+.mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper .mail_user_bottom_operations .cancel_button {
+  padding: 7px 10px;
+  background-color: #90A4AF;
+}
+.mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper .mail_user_bottom_operations .cancel_button img {
+  margin-right: 0px;
+  width: fit-content;
+  transform: scale(0.5);
+}
+.mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper .mail_user_bottom_operations .cancel_button:hover {
+  background-color: #FF8409;
+}
+.mail_user_block .mail_user_linked_wrapper {
+  margin-top: 35px;
+}
+.mail_user_block .mail_user_linked_wrapper .mail_user_linked_list {
+  margin-top: 44px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.mail_user_block .mail_user_linked_wrapper .mail_user_linked_list .mail_user_wrapper {
+  margin-top: 0px;
+  padding: 30px 40px 40px 40px;
+  background-color: #F3F4F8;
+}
+.mail_user_block .mail_user_linked_wrapper .mail_user_linked_list .mail_user_wrapper .mail_title {
+  text-decoration: none;
+  color: #253238;
+}
+.mail_user_block .mail_user_linked_wrapper .mail_user_linked_list .mail_user_wrapper .mail_title:hover {
+  color: #5979C4;
+}
+.mail_user_block .mail_user_linked_wrapper .mail_user_linked_list .mail_user_wrapper .mail_dates_wrapper {
+  display: flex;
+  margin-top: 24px;
+}
+.mail_user_block .mail_user_linked_wrapper .mail_user_linked_list .mail_user_wrapper .mail_dates_wrapper .mailings_date {
+  display: flex;
+  align-items: center;
+}
+.mail_user_block .mail_user_linked_wrapper .mail_user_linked_list .mail_user_wrapper .mail_dates_wrapper .mailings_date img {
+  width: 20px;
+  height: 20px;
+}
+.mail_user_block .mail_user_linked_wrapper .mail_user_linked_list .mail_user_wrapper .mail_dates_wrapper .mailings_date p {
+  margin-left: 6px;
+}
+
+.footer {
+  margin-top: 120px;
+}
+
+@media screen and (max-width: 1023px) {
+  .vote_button p,
+  .publicate_button p,
+  .cancel_button p {
+    font-size: 16px;
+  }
+  .mail_user_block {
+    margin-top: 20px;
+  }
+  .mail_user_block .mail_user_wrapper .page_title {
+    margin-bottom: 24px;
+  }
+  .mail_user_block .mail_user_wrapper .mail_title {
+    font-size: 20px;
+  }
+  .mail_user_block .mail_user_wrapper .mail_text p {
+    font-size: 16px;
+  }
+  .mail_user_block .mail_user_wrapper .mail_materials_main_wrapper {
+    margin-top: 20px;
+  }
+  .mail_user_block .mail_user_wrapper .mail_materials_main_wrapper .materials_list {
+    margin-top: 25px;
+  }
+  .mail_user_block .mail_user_wrapper .mail_materials_main_wrapper .materials_list .materials_list_item .material_info_wrapper .document_info_title {
+    margin-left: 0px;
+  }
+  .mail_user_block .mail_user_vote {
+    margin-top: 25px;
+  }
+  .mail_user_block .mail_user_vote .mail_user_vote_wrapper .mail_user_radio_list .custom_radio span {
+    font-size: 16px;
+  }
+  .mail_user_block .mail_user_comments .mail_user_comment_create .comment_create_wrapper .comment_create_header .comment_create_title_wrapper p {
+    font-size: 16px;
+  }
+  .mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list {
+    margin-top: 20px;
+  }
+  .mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper .mail_user_header_wrapper .mail_user_header_info .mail_title {
+    margin-bottom: 20px;
+  }
+  .mail_user_block .mail_user_linked_wrapper {
+    margin-top: 60px;
+  }
+  .mail_user_block .mail_user_linked_wrapper .mail_user_linked_list {
+    margin-top: 20px;
+  }
+  .mail_user_block .mail_user_linked_wrapper .mail_user_linked_list .mail_user_wrapper .mail_title {
+    font-size: 20px;
+  }
+  .mail_user_block .mail_user_linked_wrapper .mail_user_linked_list .mail_user_wrapper .mail_dates_wrapper {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .footer {
+    margin-top: 80px;
+  }
+  .mail_user_block .mail_user_vote .mail_user_vote_wrapper {
+    flex-wrap: wrap;
+  }
+  .mail_user_block .mail_user_vote .mail_user_vote_wrapper .mail_user_radio_list {
+    grid-template-columns: min-content min-content min-content;
+    width: 100%;
+    column-gap: 10px;
+  }
+  .mail_user_block .mail_user_vote .mail_user_vote_wrapper .mail_user_radio_list label span {
+    font-size: 16px;
+  }
+  .mail_user_block .mail_user_vote .mail_user_vote_wrapper .mail_user_radio_list h4 {
+    grid-column: 1/4;
+    margin-bottom: 18px;
+  }
+  .mail_user_block .mail_user_vote .mail_user_vote_wrapper .vote_button {
+    margin-left: 0px;
+    margin: 40px auto 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mail_user_block .mail_user_wrapper:first-child .mail_dates_wrapper {
+    margin-bottom: 26px;
+  }
+  .mail_user_block .mail_user_wrapper .mail_materials_main_wrapper {
+    margin-top: 30px;
+  }
+  .mail_user_block .mail_user_wrapper .mail_materials_main_wrapper .materials_list {
+    margin-top: 15px;
+  }
+  .mail_user_block .mail_user_vote .mail_user_vote_wrapper {
+    margin-top: 34px;
+  }
+  .mail_user_block .mail_user_comments .mail_user_comment_create .comment_create_wrapper .comment_create_content .comment_create_content_wrapper .comment_input_name input {
+    font-size: 16px;
+  }
+  .mail_user_block .mail_user_comments .mail_user_comment_create .comment_create_wrapper .comment_create_content .comment_create_content_wrapper .default_textarea {
+    font-size: 16px;
+  }
+  .mail_user_block .mail_user_comments .mail_user_comment_create .comment_create_wrapper .comment_create_content .comment_create_content_wrapper .mail_materials_wrapper {
+    padding-top: 0px;
+  }
+  .mail_user_block .mail_user_comments .mail_user_comments_wrapper {
+    margin-top: 100px;
+  }
+  .mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper {
+    padding: 20px 0px;
+  }
+  .mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper .mail_user_header_wrapper .mail_user_header_info .mail_title {
+    margin-bottom: 10px;
+  }
+  .mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper .mail_materials_wrapper {
+    margin-top: 20px;
+  }
+  .mail_user_block .mail_user_comments .mail_user_comments_wrapper .mail_user_comments_list .mail_user_wrapper .mail_materials_wrapper .materials_list_item .material_info_wrapper .document_info_title {
+    margin-left: 0px;
+  }
+  .mail_user_block .mail_user_linked_wrapper {
+    margin-top: 40px;
+  }
+  .mail_user_block .mail_user_linked_wrapper .mail_user_linked_list .mail_user_wrapper {
+    padding: 30px 15px;
+  }
+  .mail_user_block .mail_user_linked_wrapper .mail_user_linked_list .mail_user_wrapper .mail_title {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .mail_user_block .mail_user_linked_wrapper .mail_user_linked_list .mail_user_wrapper .mail_dates_wrapper {
+    margin-top: 12px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .mail_user_block .mail_user_vote .mail_user_vote_wrapper .mail_user_radio_list {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+  }
+  .mail_user_block .mail_user_vote .mail_user_vote_wrapper .mail_user_radio_list label {
+    grid-column: 1/3;
+  }
+}

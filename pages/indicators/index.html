@@ -1,0 +1,2808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>НАПФ</title>
+  <script type="module" crossorigin src="../../assets/indicators/indicators.js"></script>
+  <link rel="stylesheet" crossorigin href="../../assets/common_scripts/common_scripts.css">
+  <link rel="stylesheet" crossorigin href="../../assets/breadcrumb/breadcrumb.css">
+  <link rel="stylesheet" crossorigin href="../../assets/accordion/accordion.css">
+  <link rel="stylesheet" crossorigin href="../../assets/inputs/inputs.css">
+  <link rel="stylesheet" crossorigin href="../../assets/select/select.css">
+  <link rel="stylesheet" crossorigin href="../../assets/mailings/mailings2.css">
+  <link rel="stylesheet" crossorigin href="../../assets/index/index2.css">
+</head>
+
+<body>
+
+  <nav class="sidebar_menu">
+    <div class="sidebar_menu_button">
+      <svg width="40" height="25" viewBox="0 0 40 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="40" height="3" rx="1.5" fill="#B3C1E2" />
+        <rect y="11" width="40" height="3" rx="1.5" fill="#B3C1E2" />
+        <rect y="22" width="40" height="3" rx="1.5" fill="#B3C1E2" />
+      </svg>
+    </div>
+
+    <div class="sidebar_items_wrapper">
+      <ul class="sidebar_menu_items">
+        <li class="sidebar_menu_item">Об Ассоциации
+          <div class="item_sublist_wrapper">
+            <ul class="sublist_items">
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />План работ СРО
+                  НАПФ</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Документы
+                  ассоциации</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Реестр членов
+                  НАПФ</a></li>
+              <li class="sublist_item"><a href="napf-front/pages/governing"><img
+                    src="../../icons/menu_list_arrow.svg" />Руководящие
+                  органы</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Специализированные
+                  органы
+                  НАПФ</a></li>
+              <li class="sublist_item"><a href="napf-front/pages/workgroup"><img
+                    src="../../icons/menu_list_arrow.svg" />Комитеты и
+                  рабочие
+                  группы
+                  НАПФ</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Комитет РСПП по
+                  развитию
+                  пенсионных систем и социальному страхованию</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Ревизионная комиссия
+                  НАПФ</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Аудиторская организация
+                  НАПФ</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />История</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="sidebar_menu_item">Членам НАПФ
+          <div class="item_sublist_wrapper">
+            <ul class="sublist_items">
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Мероприятия
+                  НАПФ</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Вопросы Бухгалтерского
+                  учета и налогообложения деятельности НПФ</a></li>
+              <li class="sublist_item"><a href="napf-front/pages/expert"><img
+                    src="../../icons/menu_list_arrow.svg" />Экспертиза
+                  нормативно-правовых актов</a></li>
+              <li class="sublist_item"><a href="napf-front/pages/reestr"><img
+                    src="../../icons/menu_list_arrow.svg" />Реестр
+                  законодательных
+                  инициатив</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Таблица полномочий
+                  государственных органов в сфере регулирования деятельности
+                  НПФ в области НПО и ОПС</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Деятельность НПФ по
+                  НПО.
+                  Мониторинг отдельных показателей</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />База знаний, материалы
+                  НАПФ</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="sidebar_menu_item">Календарь
+          <div class="item_sublist_wrapper">
+            <ul class="sublist_items">
+              <li class="sublist_item"><a href="napf-front/pages/events"><img
+                    src="../../icons/menu_list_arrow.svg" />Мероприятия
+                  НАПФ</a></li>
+              <li class="sublist_item"><a href="napf-front/pages/events"><img
+                    src="../../icons/menu_list_arrow.svg" />График
+                  плановых
+                  проверок
+                  членов НАПФ</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="sidebar_menu_item">Процесс-центр
+          <div class="item_sublist_wrapper">
+            <ul class="sublist_items">
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Обзор СМИ</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Видеоблог</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Архив новостей</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Дайджест изменений
+                  законодательства</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="sidebar_menu_item">Стандарты
+          <div class="item_sublist_wrapper">
+            <ul class="sublist_items">
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Стандарты НАПФ</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Стандарты пенсионного
+                  рынка</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="sidebar_menu_item">Для граждан
+          <div class="item_sublist_wrapper">
+            <ul class="sublist_items">
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Образцы исковых
+                  заявлений</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Сводный реестр
+                  недобросовестных агентов</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Финансовая
+                  культура</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Показатели деятельности
+                  фондов</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Рейтинг НПФ</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="sidebar_menu_item">Библиотека
+          <div class="item_sublist_wrapper">
+            <ul class="sublist_items">
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Монографии и научные
+                  исследования</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Тематические
+                  материалы</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="sidebar_menu_item">Раскрытие информации
+          <div class="item_sublist_wrapper">
+            <ul class="sublist_items">
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Годовые отчеты
+                  НАПФ</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Отчет Президента
+                  2022</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Отчет Совета
+                  2022</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Приоритетные
+                  направления
+                  деятельности на 2023 год</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />График плановых
+                  проверок
+                  членов НАПФ</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Отчетность
+                  НАПФ</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Результаты проверок
+                  деятельности членов НАПФ</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Соглашения</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Сводные данные о
+                  результатах проведения специальной оценки условий
+                  труда</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Базовые
+                  стандарты</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="sidebar_menu_item"> <a href="/">Программа Долгосрочных
+            Сбережений </a>
+        </li>
+        <li class="sidebar_menu_item">Архив
+          <div class="item_sublist_wrapper">
+            <ul class="sublist_items">
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Архив комитеты</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Дополнительные
+                  материалы</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Пенсионная реформа,
+                  дискуссионные материалы</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Фонды о себе</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />ИКЦ НАПФ</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Фотогалерея</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Реестр законодательных
+                  инициатив</a></li>
+              <li class="sublist_item"><a href="#"><img src="../../icons/menu_list_arrow.svg" />Журнал «Пенсионное
+                  обозрение», № 1(33): «НПФ-2018»</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="sidebar_menu_item"><a href="/">Контакты</a></li>
+      </ul>
+    </div>
+
+  </nav>
+
+  <div class="mobile_top_panel">
+
+    <div class="mobile_menu_button">
+      <svg width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M1.5 0.5C0.947715 0.5 0.5 0.947715 0.5 1.5C0.5 2.05228 0.947716 2.5 1.5 2.5H25.5C26.0523 2.5 26.5 2.05228 26.5 1.5C26.5 0.947715 26.0523 0.5 25.5 0.5H1.5ZM0.5 11.5C0.5 10.9477 0.947715 10.5 1.5 10.5H25.5C26.0523 10.5 26.5 10.9477 26.5 11.5C26.5 12.0523 26.0523 12.5 25.5 12.5H1.5C0.947716 12.5 0.5 12.0523 0.5 11.5ZM0.5 21.5C0.5 20.9477 0.947715 20.5 1.5 20.5H25.5C26.0523 20.5 26.5 20.9477 26.5 21.5C26.5 22.0523 26.0523 22.5 25.5 22.5H1.5C0.947716 22.5 0.5 22.0523 0.5 21.5Z"
+          fill="#5979C4" />
+      </svg>
+    </div>
+
+    <a class="mobile_panel_phone" href="tel:+7 495 287 8578">+7 495 287
+      8578</a>
+
+    <a class="mobile_panel_vk" href="#">
+      <img src="../../icons/vk.svg" alt="vk" />
+    </a>
+
+  </div>
+
+  <div class="sidebar_drawer">
+
+    <div class="drawer_top_panel">
+
+      <div class="mobile_menu_button_close">
+        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2.01465" y="0.600586" width="26" height="2" rx="1" transform="rotate(45 2.01465 0.600586)"
+            fill="#FF8409" />
+          <rect x="0.600586" y="18.9851" width="26" height="2" rx="1" transform="rotate(-45 0.600586 18.9851)"
+            fill="#FF8409" />
+        </svg>
+      </div>
+      <a class="mobile_auth_link" href="#">
+        <svg class="mobile_auth_icon" width="30" height="31" viewBox="0 0 30 31" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path id="mobile_auth_icon_path"
+            d="M13.2857 1H25.8571C26.6907 1 27.4901 1.33948 28.0795 1.94377C28.6689 2.54805 29 3.36764 29 4.22222V26.7778C29 27.6324 28.6689 28.4519 28.0795 29.0562C27.4901 29.6605 26.6907 30 25.8571 30H13.2857M16.7143 15.5L10.4286 9.05556M16.7143 15.5L10.4286 21.9444M16.7143 15.5H1"
+            stroke="#5979C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span>
+          Вход для пользователей
+        </span>
+      </a>
+      <a class="mobile_panel_vk" href="#">
+        <img src="../../icons/vk.svg" alt="vk" />
+      </a>
+    </div>
+
+    <div class="item_sublist_wrapper">
+    </div>
+  </div>
+
+  <div class="auth_menu_drawer">
+
+    <div class="auth_menu_close_button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <rect x="2.91852" y="1" width="40" height="3" rx="1.5" transform="rotate(45 2.91852 1)" fill="#FF8409" />
+        <rect x="0.79718" y="29" width="40" height="3" rx="1.5" transform="rotate(-45 0.79718 29)" fill="#FF8409" />
+      </svg>
+      <p>закрыть</p>
+    </div>
+
+    <div class="auth_menu_form container">
+
+      <div class="auth_signin_form active_form ">
+
+        <form>
+          <label class="signin_input auth_input_wrapper">
+            <span class="auth_input_label">Email:</span>
+            <input class="auth_input" type="text">
+          </label>
+          <label class="signin_input auth_input_wrapper">
+            <span class="auth_input_label">Пароль:</span>
+            <input class="auth_input" type="text">
+            <button class="visible_password_button">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.5014 14.4837C19.1923 14.4837 20.814 15.143 22.0097 16.3167C23.2054 17.4903 23.8771 19.0821 23.8771 20.7419C23.8771 22.4016 23.2054 23.9934 22.0097 25.167C20.814 26.3407 19.1923 27 17.5014 27C15.8104 27 14.1888 26.3407 12.9931 25.167C11.7974 23.9934 11.1257 22.4016 11.1257 20.7419C11.1257 19.0821 11.7974 17.4903 12.9931 16.3167C14.1888 15.143 15.8104 14.4837 17.5014 14.4837ZM17.5014 16.8305C16.4445 16.8305 15.431 17.2426 14.6837 17.9761C13.9364 18.7096 13.5166 19.7045 13.5166 20.7419C13.5166 21.7792 13.9364 22.7741 14.6837 23.5076C15.431 24.2411 16.4445 24.6532 17.5014 24.6532C18.5582 24.6532 19.5718 24.2411 20.3191 23.5076C21.0664 22.7741 21.4862 21.7792 21.4862 20.7419C21.4862 19.7045 21.0664 18.7096 20.3191 17.9761C19.5718 17.2426 18.5582 16.8305 17.5014 16.8305ZM17.5014 9C24.8542 9 31.2028 13.9283 32.9641 20.8342C33.0412 21.136 32.993 21.4556 32.8301 21.7226C32.6672 21.9896 32.4029 22.1822 32.0954 22.2579C31.7878 22.3336 31.4622 22.2863 31.1902 22.1264C30.9182 21.9665 30.7221 21.7071 30.6449 21.4052C29.9069 18.5319 28.2128 15.9826 25.8313 14.1616C23.4497 12.3406 20.517 11.3521 17.4981 11.3528C14.4792 11.3535 11.547 12.3434 9.16631 14.1656C6.78565 15.9877 5.09283 18.5378 4.35628 21.4115C4.31828 21.561 4.25065 21.7018 4.15724 21.8257C4.06382 21.9496 3.94646 22.0543 3.81184 22.1337C3.67723 22.2131 3.528 22.2657 3.37268 22.2885C3.21736 22.3112 3.05898 22.3038 2.9066 22.2665C2.75422 22.2292 2.61081 22.1628 2.48456 22.0711C2.35832 21.9794 2.25171 21.8642 2.17082 21.7321C2.08993 21.6 2.03635 21.4535 2.01314 21.301C1.98992 21.1486 1.99753 20.9931 2.03552 20.8435C2.89993 17.4599 4.89128 14.4567 7.69332 12.311C10.4954 10.1652 13.9475 8.99986 17.5014 9Z"
+                  fill="#879FD6" />
+              </svg>
+
+            </button>
+          </label>
+
+          <button class="signin_button submit_button" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="29" viewBox="0 0 30 29" fill="none">
+              <path d="M19.8333 6.04163L25.875 12.0833L19.8333 18.125" stroke="#5979C4" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M25.875 12.0833H16.2083C9.53471 12.0833 4.125 17.493 4.125 24.1666V25.3749" stroke="#5979C4"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Войти
+          </button>
+          <div class="bottom_links">
+            <a href="#" class="signup_link">
+              Зарегистрироваться
+            </a>
+            <a href="#" class="forgot_password_link">
+              Забыли пароль?
+            </a>
+          </div>
+        </form>
+
+      </div>
+
+      <div class="auth_signup_form">
+
+        <h2 class="auth_caption">Регистрация пользователя</h2>
+
+        <p class="auth_info_text">Уважаемый пользователь, для регистрации на
+          сайте Национальной
+          ассоциации негосударственных пенсионных фондов заполните,
+          пожалуйста форму. После регистрации вам придёт подтверждение на
+          указанную электронную почту. Благодарим вас за регистрацию на
+          нашем сайте!</p>
+
+        <form action>
+          <div class="signup_wrapper">
+
+            <label class="signup_input auth_input_wrapper">
+              <span class="auth_input_label">Email:</span>
+              <input class="auth_input" type="text">
+            </label>
+            <label class="signup_checkbox auth_checkbox">
+              <input type="checkbox">
+              <span>Отказаться от получения принудительных рассылок
+                новостей</span>
+            </label>
+
+          </div>
+
+          <label class="signup_input auth_input_wrapper">
+            <span class="auth_input_label">Полное имя:</span>
+            <input class="auth_input" type="text">
+          </label>
+          <div class="signup_wrapper">
+
+            <label class="signup_input auth_input_wrapper">
+              <span class="auth_input_label">Организация:</span>
+              <input class="auth_input" type="text">
+            </label>
+            <label class="signup_checkbox auth_checkbox">
+              <input type="checkbox">
+              <span>Уполномочены ли Вы представлять мнение организации?</span>
+            </label>
+
+          </div>
+          <label class="signup_textarea auth_textarea">
+            <span class="auth_textarea_label">Коротко о себе:</span>
+            <textarea contenteditable cols="30" rows="10"></textarea>
+          </label>
+          <button class="signup_button submit_button " type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="29" viewBox="0 0 30 29" fill="none">
+              <path d="M19.8333 6.04163L25.875 12.0833L19.8333 18.125" stroke="#5979C4" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M25.875 12.0833H16.2083C9.53471 12.0833 4.125 17.493 4.125 24.1666V25.3749" stroke="#5979C4"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Отправить запрос
+          </button>
+        </form>
+
+      </div>
+
+      <div class="auth_recovery_form">
+
+        <h2 class="auth_caption">Укажите адрес электронной почты для
+          восстановления пароля:</h2>
+
+        <form action>
+          <label class="recovery_input auth_input_wrapper">
+            <span class="auth_input_label">Ваш e-mail:</span>
+            <input class="auth_input" type="text">
+          </label>
+          <button class="recovery_button submit_button " type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="29" viewBox="0 0 30 29" fill="none">
+              <path d="M19.8333 6.04163L25.875 12.0833L19.8333 18.125" stroke="#5979C4" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M25.875 12.0833H16.2083C9.53471 12.0833 4.125 17.493 4.125 24.1666V25.3749" stroke="#5979C4"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Отправить
+          </button>
+        </form>
+
+      </div>
+
+    </div>
+
+    <div class="auth_drawer_img">
+      <img src="../../full_circle.svg" alt="circle">
+    </div>
+
+  </div>
+
+  <header class="header">
+
+    <div class="header_wrapper container">
+
+      <div class="header_block">
+
+        <div class="header_block_logo">
+          <a href="/">
+            <img src="../../main_logo.svg" alt="logo" />
+          </a>
+        </div>
+
+        <div class="header_search_input">
+          <input type="text" placeholder="Поиск по сайту">
+          <button class="header_search_button">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M25 25L19.2094 19.2094M19.2094 19.2094C20.1999 18.2189 20.9856 17.043 21.5217 15.7488C22.0577 14.4547 22.3336 13.0676 22.3336 11.6668C22.3336 10.266 22.0577 8.87896 21.5217 7.5848C20.9856 6.29065 20.1999 5.11475 19.2094 4.12424C18.2189 3.13373 17.043 2.34802 15.7488 1.81196C14.4547 1.27591 13.0676 1 11.6668 1C10.266 1 8.87896 1.27591 7.5848 1.81196C6.29065 2.34802 5.11474 3.13373 4.12424 4.12424C2.12382 6.12466 1 8.8378 1 11.6668C1 14.4958 2.12382 17.209 4.12424 19.2094C6.12466 21.2098 8.8378 22.3336 11.6668 22.3336C14.4958 22.3336 17.209 21.2098 19.2094 19.2094Z"
+                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="header_block_links">
+          <div class="header_link_top">
+            <a class="phone_link" href="tel:+7 495 287 8578">
+              +7 495 287 8578
+            </a>
+            <a class="vk_link" href="#">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M2.24 2.24C0 4.50133 0 8.11733 0 15.36V16.64C0 23.872 0 27.488 2.24 29.76C4.50133 32 8.11733 32 15.36 32H16.64C23.872 32 27.488 32 29.76 29.76C32 27.4987 32 23.8827 32 16.64V15.36C32 8.128 32 4.512 29.76 2.24C27.4987 0 23.8827 0 16.64 0H15.36C8.128 0 4.512 0 2.24 2.24ZM5 10.0104C5.17582 18.1289 9.46154 23 16.978 23H16.989H17.4176V18.3579C20.1758 18.6181 22.2637 20.5332 23.0989 23H27C26.5999 21.5983 25.8906 20.2928 24.9189 19.1697C23.9471 18.0466 22.7351 17.1314 21.3626 16.4844C22.5925 15.775 23.6547 14.8331 24.4828 13.7174C25.311 12.6017 25.8873 11.3362 26.1758 10H22.6374C21.8681 12.5813 19.5824 14.9231 17.4176 15.1417V10.0104H13.8681V19.0032C11.6703 18.4828 8.9011 15.964 8.78022 10.0104H5Z"
+                  fill="#5979C4" />
+              </svg>
+            </a>
+          </div>
+          <div class="header_link_bottom">
+            <a class="auth_link" href="#">
+              <svg class="auth_icon" width="30" height="31" viewBox="0 0 30 31" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path id="auth_icon_path"
+                  d="M13.2857 1H25.8571C26.6907 1 27.4901 1.33948 28.0795 1.94377C28.6689 2.54805 29 3.36764 29 4.22222V26.7778C29 27.6324 28.6689 28.4519 28.0795 29.0562C27.4901 29.6605 26.6907 30 25.8571 30H13.2857M16.7143 15.5L10.4286 9.05556M16.7143 15.5L10.4286 21.9444M16.7143 15.5H1"
+                  stroke="#5979C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              Вход для пользователей
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="main_content">
+
+    <div class="container">
+
+      <nav class="breadcrumb_wrapper">
+        <ul class="breadcrumb_list">
+          <li class="breadcrumb_item">
+            <a href="/">Главная
+              <img src="../../icons/arrow.svg" alt="arrow">
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <main>
+
+        <section class="indicators_block">
+
+          <h1 class="page_title">Показатели деятельности фондов</h1>
+
+          <div class="indicators_tab_wrapper">
+
+            <div class="custom_select">
+              <select name="year" id="">
+                <option value="2024">2024</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+              </select>
+              <div class="custom_select_button">
+                <img src="../../icons/_1.svg" alt="">
+              </div>
+            </div>
+
+            <div class="indicators_tab_list">
+
+              <button class="tab indicators_tab_item">
+                I квартал
+              </button>
+
+              <button class="tab indicators_tab_item active_tab">
+                полугодие
+              </button>
+
+              <button class="tab indicators_tab_item">
+                9 месяцев
+              </button>
+
+              <button class="tab indicators_tab_item">
+                Весь год
+              </button>
+
+            </div>
+
+          </div>
+
+          <h2 class="block_title">Основные данные</h2>
+
+          <div class="table_select_wrapper">
+
+            <div class="custom_select date_select">
+              <select name="year" id="">
+                <option value="2024">04.04.2024</option>
+                <option value="2024">04.04.2024</option>
+                <option value="2023">03.04.2024</option>
+                <option value="2022">02.04.2024</option>
+                <option value="2021">01.04.2024</option>
+                <option value="2020">31.03.2024</option>
+              </select>
+              <div class="custom_select_button">
+                <img src="../../icons/_1.svg" alt="">
+              </div>
+            </div>
+
+
+            <label class="custom_checkbox">
+              <input type="checkbox">
+              <span>Показывать только членов НАПФ</span>
+            </label>
+
+            <a href="#" class="block_link_filled all_npf_link">
+              <img src="../../icons/list_filled.svg" alt="ico">
+              <span>
+                Список НПФ
+              </span>
+            </a>
+
+          </div>
+
+
+          <div class="table_container container">
+
+            <div class="table_wrapper">
+
+              <table>
+                <thead>
+                  <tr>
+                    <th rowspan="2"><a href="#">№ п/п</a></th>
+                    <th rowspan="2"><a href="#">Лиц № <span>↓</span></a></th>
+                    <th rowspan="2"><a href="#">Название фонда <span>↓</span></a></th>
+                    <th rowspan="2"><a href="#">Собственное имущество фонда <span>↓</a></th>
+                    <th rowspan="2"><a href="#">Капитал и резервы <span>↓</a></th>
+                    <th rowspan="2"><a href="#">Имущество для ОУД <span>↓</a></th>
+                    <th rowspan="2"><a href="#">Пенсионные резервы <span>↓</a></th>
+                    <th colspan="3"><a href="#">ОПС </a></th>
+                    <th colspan="3"><a href="#">НПО</a></th>
+                    <th rowspan="2"><a href="#">Собственное имущество фонда <span>↓</a></th>
+                    <th rowspan="2"><a href="#">Капитал и резервы <span>↓</a></th>
+                    <th rowspan="2"><a href="#">Имущество для ОУД <span>↓</a></th>
+                    <th rowspan="2"><a href="#">Пенсионные резервы <span>↓</a></th>
+                    <th colspan="3"><a href="#">ОПС</a></th>
+                    <th colspan="3"><a href="#">НПО</a></th>
+                  </tr>
+                  <tr>
+                    <th><a href="#">Кол-во застрахованных <span>↓</a></th>
+                    <th><a href="#">Получают пенсию <span>↓</a></th>
+                    <th><a href="#">Пенсионные выплаты <span>↓</a></th>
+
+                    <th><a href="#">Кол-во застрахованных <span>↓</a></th>
+                    <th><a href="#">Получают пенсию <span>↓</a></th>
+                    <th><a href="#">Пенсионные выплаты <span>↓</a></th>
+
+                    <th><a href="#">Кол-во застрахованных <span>↓</a></th>
+                    <th><a href="#">Получают пенсию <span>↓</a></th>
+                    <th><a href="#">Пенсионные выплаты <span>↓</a></th>
+
+                    <th><a href="#">Кол-во застрахованных <span>↓</a></th>
+                    <th><a href="#">Получают пенсию <span>↓</a></th>
+                    <th><a href="#">Пенсионные выплаты <span>↓</a></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- 1 -->
+                  <tr>
+                    <td>1</td>
+                    <td>215</td>
+                    <td>
+                      <div class="td_wrapper">
+                        Акционерное общество «Негосударственный пенсионный фонд ТРАДИЦИЯ»
+                        <div class="link_wrapper">
+                          <a href="" class="block_link_filled">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M23.265 16.9753L28.8462 7.32664L31.1235 8.64297L24.2391 20.5557L15.6698 15.6195L9.39092 26.4792H31.163V29.1118H4.83643V5.41797H7.46908V24.5574L14.7089 11.9996L23.265 16.9753Z"
+                                fill="#5979C4" />
+                            </svg>
+                            <span>Подробные данные</span>
+                          </a>
+                        </div>
+                      </div>
+
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                  </tr>
+                  <!-- 2 -->
+                  <tr>
+                    <td>2</td>
+                    <td>12</td>
+                    <td>
+                      <div class="td_wrapper">
+                        Акционерное общество «Негосударственный пенсионный фонд «Гефест»
+                        <div class="link_wrapper">
+                          <a href="" class="block_link_filled">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M23.265 16.9753L28.8462 7.32664L31.1235 8.64297L24.2391 20.5557L15.6698 15.6195L9.39092 26.4792H31.163V29.1118H4.83643V5.41797H7.46908V24.5574L14.7089 11.9996L23.265 16.9753Z"
+                                fill="#5979C4" />
+                            </svg>
+                            <span>Подробные данные</span>
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                  </tr>
+                  <!-- 3 -->
+                  <tr>
+                    <td>3</td>
+                    <td>23</td>
+                    <td>
+                      <div class="td_wrapper">
+                        Акционерное общество «Негосударственный пенсионный фонд «Алмазная осень»
+                        <div class="link_wrapper">
+                          <a href="" class="block_link_filled">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M23.265 16.9753L28.8462 7.32664L31.1235 8.64297L24.2391 20.5557L15.6698 15.6195L9.39092 26.4792H31.163V29.1118H4.83643V5.41797H7.46908V24.5574L14.7089 11.9996L23.265 16.9753Z"
+                                fill="#5979C4" />
+                            </svg>
+                            <span>Подробные данные</span>
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                  </tr>
+                  <!-- 4 -->
+                  <tr>
+                    <td>4</td>
+                    <td>30</td>
+                    <td>
+                      <div class="td_wrapper">
+                        Акционерное общество «Негосударственный Сберегательный Пенсионный Фонд»
+                        <div class="link_wrapper">
+                          <a href="" class="block_link_filled">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M23.265 16.9753L28.8462 7.32664L31.1235 8.64297L24.2391 20.5557L15.6698 15.6195L9.39092 26.4792H31.163V29.1118H4.83643V5.41797H7.46908V24.5574L14.7089 11.9996L23.265 16.9753Z"
+                                fill="#5979C4" />
+                            </svg>
+                            <span>Подробные данные</span>
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                  </tr>
+                  <!-- 5 -->
+                  <tr>
+                    <td>5</td>
+                    <td>32</td>
+                    <td>
+                      <div class="td_wrapper">
+                        Акционерное общество «Негосударственный Сберегательный Пенсионный Фонд»
+                        <div class="link_wrapper">
+                          <a href="" class="block_link_filled">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M23.265 16.9753L28.8462 7.32664L31.1235 8.64297L24.2391 20.5557L15.6698 15.6195L9.39092 26.4792H31.163V29.1118H4.83643V5.41797H7.46908V24.5574L14.7089 11.9996L23.265 16.9753Z"
+                                fill="#5979C4" />
+                            </svg>
+                            <span>Подробные данные</span>
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                  </tr>
+                  <!-- 6 -->
+                  <tr>
+                    <td>6</td>
+                    <td>215</td>
+                    <td>
+                      <div class="td_wrapper">
+                        Акционерное общество «Негосударственный пенсионный фонд ТРАДИЦИЯ»
+                        <div class="link_wrapper">
+                          <a href="" class="block_link_filled">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M23.265 16.9753L28.8462 7.32664L31.1235 8.64297L24.2391 20.5557L15.6698 15.6195L9.39092 26.4792H31.163V29.1118H4.83643V5.41797H7.46908V24.5574L14.7089 11.9996L23.265 16.9753Z"
+                                fill="#5979C4" />
+                            </svg>
+                            <span>Подробные данные</span>
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                  </tr>
+                  <!-- 7 -->
+                  <tr>
+                    <td>7</td>
+                    <td>12</td>
+                    <td>
+                      <div class="td_wrapper">
+                        Акционерное общество
+                        «Негосударственный пенсионный фонд «Гефест»
+                        <div class="link_wrapper">
+                          <a href="" class="block_link_filled">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M23.265 16.9753L28.8462 7.32664L31.1235 8.64297L24.2391 20.5557L15.6698 15.6195L9.39092 26.4792H31.163V29.1118H4.83643V5.41797H7.46908V24.5574L14.7089 11.9996L23.265 16.9753Z"
+                                fill="#5979C4" />
+                            </svg>
+                            <span>Подробные данные</span>
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                  </tr>
+                  <!-- 8 -->
+                  <tr>
+                    <td>8</td>
+                    <td>23</td>
+                    <td>
+                      <div class="td_wrapper">
+                        Акционерное общество «Негосударственный пенсионный фонд «Алмазная осень»
+                        <div class="link_wrapper">
+                          <a href="" class="block_link_filled">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M23.265 16.9753L28.8462 7.32664L31.1235 8.64297L24.2391 20.5557L15.6698 15.6195L9.39092 26.4792H31.163V29.1118H4.83643V5.41797H7.46908V24.5574L14.7089 11.9996L23.265 16.9753Z"
+                                fill="#5979C4" />
+                            </svg>
+                            <span>Подробные данные</span>
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                  </tr>
+                  <!-- 9 -->
+                  <tr>
+                    <td>9</td>
+                    <td>30</td>
+                    <td>
+                      <div class="td_wrapper">
+                        Акционерное общество «Негосударственный Сберегательный Пенсионный Фонд»
+                        <div class="link_wrapper">
+                          <a href="" class="block_link_filled">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M23.265 16.9753L28.8462 7.32664L31.1235 8.64297L24.2391 20.5557L15.6698 15.6195L9.39092 26.4792H31.163V29.1118H4.83643V5.41797H7.46908V24.5574L14.7089 11.9996L23.265 16.9753Z"
+                                fill="#5979C4" />
+                            </svg>
+                            <span>Подробные данные</span>
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                  </tr>
+                  <!-- 10 -->
+                  <tr>
+                    <td>10</td>
+                    <td>32</td>
+                    <td>
+                      <div class="td_wrapper">
+                        Акционерное общество «Негосударственный Сберегательный Пенсионный Фонд»
+                        <div class="link_wrapper">
+                          <a href="" class="block_link_filled">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M23.265 16.9753L28.8462 7.32664L31.1235 8.64297L24.2391 20.5557L15.6698 15.6195L9.39092 26.4792H31.163V29.1118H4.83643V5.41797H7.46908V24.5574L14.7089 11.9996L23.265 16.9753Z"
+                                fill="#5979C4" />
+                            </svg>
+                            <span>Подробные данные</span>
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                  </tr>
+                  <!-- 11 -->
+                  <tr>
+                    <td>11</td>
+                    <td>32</td>
+                    <td>
+                      <div class="td_wrapper">
+                        Акционерное общество «Негосударственный Сберегательный Пенсионный Фонд»
+                        <div class="link_wrapper">
+                          <a href="" class="block_link_filled">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M23.265 16.9753L28.8462 7.32664L31.1235 8.64297L24.2391 20.5557L15.6698 15.6195L9.39092 26.4792H31.163V29.1118H4.83643V5.41797H7.46908V24.5574L14.7089 11.9996L23.265 16.9753Z"
+                                fill="#5979C4" />
+                            </svg>
+                            <span>Подробные данные</span>
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                  </tr>
+                  <!-- 12 -->
+                  <tr>
+                    <td>12</td>
+                    <td>32</td>
+                    <td>
+                      <div class="td_wrapper">
+                        Акционерное общество «Негосударственный Сберегательный Пенсионный Фонд»
+                        <div class="link_wrapper">
+                          <a href="" class="block_link_filled">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M23.265 16.9753L28.8462 7.32664L31.1235 8.64297L24.2391 20.5557L15.6698 15.6195L9.39092 26.4792H31.163V29.1118H4.83643V5.41797H7.46908V24.5574L14.7089 11.9996L23.265 16.9753Z"
+                                fill="#5979C4" />
+                            </svg>
+                            <span>Подробные данные</span>
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                  </tr>
+                  <!-- 13 -->
+                  <tr>
+                    <td>13</td>
+                    <td>32</td>
+                    <td>
+                      <div class="td_wrapper">
+                        Акционерное общество «Негосударственный Сберегательный Пенсионный Фонд»
+                        <div class="link_wrapper">
+                          <a href="" class="block_link_filled">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M23.265 16.9753L28.8462 7.32664L31.1235 8.64297L24.2391 20.5557L15.6698 15.6195L9.39092 26.4792H31.163V29.1118H4.83643V5.41797H7.46908V24.5574L14.7089 11.9996L23.265 16.9753Z"
+                                fill="#5979C4" />
+                            </svg>
+                            <span>Подробные данные</span>
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                  </tr>
+                  <!-- 14 -->
+                  <tr>
+                    <td>14</td>
+                    <td>32</td>
+                    <td>
+                      <div class="td_wrapper">
+                        Акционерное общество «Негосударственный Сберегательный Пенсионный Фонд»
+                        <div class="link_wrapper">
+                          <a href="" class="block_link_filled">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M23.265 16.9753L28.8462 7.32664L31.1235 8.64297L24.2391 20.5557L15.6698 15.6195L9.39092 26.4792H31.163V29.1118H4.83643V5.41797H7.46908V24.5574L14.7089 11.9996L23.265 16.9753Z"
+                                fill="#5979C4" />
+                            </svg>
+                            <span>Подробные данные</span>
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                  </tr>
+                  <!-- 15 -->
+                  <tr>
+                    <td>15</td>
+                    <td>32</td>
+                    <td>
+                      <div class="td_wrapper">
+                        Акционерное общество «Негосударственный Сберегательный Пенсионный Фонд»
+                        <div class="link_wrapper">
+                          <a href="" class="block_link_filled">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M23.265 16.9753L28.8462 7.32664L31.1235 8.64297L24.2391 20.5557L15.6698 15.6195L9.39092 26.4792H31.163V29.1118H4.83643V5.41797H7.46908V24.5574L14.7089 11.9996L23.265 16.9753Z"
+                                fill="#5979C4" />
+                            </svg>
+                            <span>Подробные данные</span>
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                  </tr>
+                  <!-- 16 -->
+                  <tr>
+                    <td>16</td>
+                    <td>32</td>
+                    <td>
+                      <div class="td_wrapper">
+                        Акционерное общество «Негосударственный Сберегательный Пенсионный Фонд»
+                        <div class="link_wrapper">
+                          <a href="" class="block_link_filled">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M23.265 16.9753L28.8462 7.32664L31.1235 8.64297L24.2391 20.5557L15.6698 15.6195L9.39092 26.4792H31.163V29.1118H4.83643V5.41797H7.46908V24.5574L14.7089 11.9996L23.265 16.9753Z"
+                                fill="#5979C4" />
+                            </svg>
+                            <span>Подробные данные</span>
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                  </tr>
+                  <!-- 17 -->
+                  <tr>
+                    <td>17</td>
+                    <td>32</td>
+                    <td>
+                      <div class="td_wrapper">
+                        Акционерное общество «Негосударственный Сберегательный Пенсионный Фонд»
+                        <div class="link_wrapper">
+                          <a href="" class="block_link_filled">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M23.265 16.9753L28.8462 7.32664L31.1235 8.64297L24.2391 20.5557L15.6698 15.6195L9.39092 26.4792H31.163V29.1118H4.83643V5.41797H7.46908V24.5574L14.7089 11.9996L23.265 16.9753Z"
+                                fill="#5979C4" />
+                            </svg>
+                            <span>Подробные данные</span>
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                  </tr>
+                  <!-- 18 -->
+                  <tr>
+                    <td>18</td>
+                    <td>32</td>
+                    <td>
+                      <div class="td_wrapper">
+                        Акционерное общество «Негосударственный Сберегательный Пенсионный Фонд»
+                        <div class="link_wrapper">
+                          <a href="" class="block_link_filled">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M23.265 16.9753L28.8462 7.32664L31.1235 8.64297L24.2391 20.5557L15.6698 15.6195L9.39092 26.4792H31.163V29.1118H4.83643V5.41797H7.46908V24.5574L14.7089 11.9996L23.265 16.9753Z"
+                                fill="#5979C4" />
+                            </svg>
+                            <span>Подробные данные</span>
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                  </tr>
+                  <!-- 19 -->
+                  <tr>
+                    <td>19</td>
+                    <td>32</td>
+                    <td>
+                      <div class="td_wrapper">
+                        Акционерное общество «Негосударственный Сберегательный Пенсионный Фонд»
+                        <div class="link_wrapper">
+                          <a href="" class="block_link_filled">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M23.265 16.9753L28.8462 7.32664L31.1235 8.64297L24.2391 20.5557L15.6698 15.6195L9.39092 26.4792H31.163V29.1118H4.83643V5.41797H7.46908V24.5574L14.7089 11.9996L23.265 16.9753Z"
+                                fill="#5979C4" />
+                            </svg>
+                            <span>Подробные данные</span>
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                  </tr>
+                  <!-- 20 -->
+                  <tr>
+                    <td>20</td>
+                    <td>32</td>
+                    <td>
+                      <div class="td_wrapper">
+                        Акционерное общество «Негосударственный Сберегательный Пенсионный Фонд»
+                        <div class="link_wrapper">
+                          <a href="" class="block_link_filled">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M23.265 16.9753L28.8462 7.32664L31.1235 8.64297L24.2391 20.5557L15.6698 15.6195L9.39092 26.4792H31.163V29.1118H4.83643V5.41797H7.46908V24.5574L14.7089 11.9996L23.265 16.9753Z"
+                                fill="#5979C4" />
+                            </svg>
+                            <span>Подробные данные</span>
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                  </tr>
+                  <!-- 21 -->
+                  <tr>
+                    <td>21</td>
+                    <td>32</td>
+                    <td>
+                      <div class="td_wrapper">
+                        Акционерное общество «Негосударственный Сберегательный Пенсионный Фонд»
+                        <div class="link_wrapper">
+                          <a href="" class="block_link_filled">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M23.265 16.9753L28.8462 7.32664L31.1235 8.64297L24.2391 20.5557L15.6698 15.6195L9.39092 26.4792H31.163V29.1118H4.83643V5.41797H7.46908V24.5574L14.7089 11.9996L23.265 16.9753Z"
+                                fill="#5979C4" />
+                            </svg>
+                            <span>Подробные данные</span>
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>4016046.04</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>689281.48</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>0.00</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>480383.84</p>
+                      <p>(тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                    <td>
+                      <p>30334</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>1454</p>
+                      <p>(человек)</p>
+                    </td>
+                    <td>
+                      <p>30439.25</p>
+                      <p> (тыс.руб.)</p>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+
+
+
+            </div>
+
+            <img class="swipe_icon" src="../../icons/swipe.svg" alt="swipe" />
+          </div>
+
+        </section>
+
+      </main>
+
+    </div>
+
+  </div>
+
+  <footer class="footer container">
+    <div class="footer_links">
+      <div class="footer_links_phone">
+        <img src="../../icons/ic_baseline-phone.svg" alt="phone" />
+        <a href="tel:+7 495 287 8578">
+          +7 495 287 8578
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="../../icons/vk.svg" alt="vk" />
+        </a>
+      </div>
+    </div>
+    <div class="footer_links_address">
+      <img src="../../icons/map_marker.svg" alt="map_marker" />
+      <span>
+        121069, г. Москва, Хлебный переулок, 19А, этаж 7
+      </span>
+    </div>
+    <div class="footer_links_email">
+      <img src="../../icons/tabler_mail-filled.svg" alt="email" />
+      <span>
+        Email:
+      </span>
+      <a href="mailto:info@napf.ru">info@napf.ru</a>
+    </div>
+  </footer>
+
+
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+      
+      const selectSelected = document.getElementsByClassName('select_selected');
+
+      function getQueryParam(param) {
+        const urlParams = new URL(window.location).searchParams;
+        return urlParams.get(param);
+      }
+
+      const year = getQueryParam('year');
+      const date = getQueryParam('date');
+
+      if (year) {
+        selectSelected[0].textContent = year;
+      }
+      if (date) {
+        selectSelected[1].textContent = date;
+      }
+
+      const config = { attributes: true, childList: true, subtree: true };
+
+      const callback = function (mutationsList, observer) {
+        for (const mutation of mutationsList) {
+          if (mutation.type === 'childList') {
+            if (mutation.target == selectSelected[0]) {
+              let selectedYear = selectSelected[0].textContent;
+              let currentUrl = window.location.href;
+              let newUrl = new URL(currentUrl);
+              newUrl.searchParams.set('year', selectedYear);
+              window.location.href = newUrl.href;
+
+            } else if (mutation.target == selectSelected[1]) {
+              let selectedDate = selectSelected[1].textContent;
+              let currentUrl = window.location.href;
+              let newUrl = new URL(currentUrl);
+              newUrl.searchParams.set('date', selectedDate);
+              window.location.href = newUrl.href;
+            }
+          }
+        }
+      };
+
+      const observer = new MutationObserver(callback);
+
+      for (let i = 0; i < selectSelected.length; i++) {
+        observer.observe(selectSelected[i], config);
+      }
+    })
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+.history_block .owl-carousel .owl-item.selected {
+  width: fit-content !important;
+}
+.history_block .owl-carousel .owl-dots {
+  margin-top: 30px;
+}
+.history_block .owl-carousel .owl-nav {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+}
+.history_block .owl-carousel .owl-nav:before {
+  content: "";
+  position: absolute;
+  width: 92%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #879FD6;
+  bottom: 0;
+}
+.history_block .owl-carousel .owl-nav .owl-next,
+.history_block .owl-carousel .owl-nav .owl-prev {
+  z-index: 1;
+}
+.history_block .owl-carousel .owl-nav .owl-next svg,
+.history_block .owl-carousel .owl-nav .owl-prev svg {
+  height: fit-content;
+}
+.history_block .owl-carousel .owl-nav .owl-prev svg {
+  transform: rotate(-180deg);
+}
+.history_block .history_select_wrapper {
+  margin-top: 60px;
+  min-height: 100px;
+}
+.history_block .history_select_wrapper .history_select_list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 110px;
+}
+.history_block .history_select_wrapper .history_select_list .owl-item.active.selected .history_select_item {
+  padding-right: 30px;
+  color: #253238;
+  font-size: 96px;
+}
+.history_block .history_select_wrapper .history_select_list .history_select_item {
+  display: block;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  color: #90A4AF;
+  font-size: 48px;
+  font-weight: 900;
+  transition: font-size 0.1s ease;
+}
+.history_block .history_select_wrapper .history_select_list .history_select_item:hover {
+  color: #253238;
+}
+.history_block .history_select_wrapper .history_select_list .owl-nav {
+  height: fit-content;
+  bottom: 0px;
+}
+.history_block .history_select_wrapper .history_select_list .owl-nav .owl-prev svg,
+.history_block .history_select_wrapper .history_select_list .owl-nav .owl-next svg {
+  width: 26px;
+}
+.history_block .history_select_wrapper .history_content_list {
+  margin-top: 28px;
+}
+.history_block .history_select_wrapper .history_content_list .history_content_item {
+  height: 0;
+  transition: opacity 0.5s ease, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+}
+.history_block .history_select_wrapper .history_content_list .history_content_item p {
+  font-size: 18px;
+  margin-top: 26px;
+}
+.history_block .history_select_wrapper .history_content_list .history_content_item .history_content_title {
+  font-size: 30px;
+  font-weight: 700;
+}
+.history_block .history_select_wrapper .history_content_list .history_content_item.selected_content_item {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+}
+
+.footer {
+  margin-top: 74px;
+}
+
+@media screen and (max-width: 1540px) {
+  .aside_block {
+    margin-top: 50px;
+  }
+  .footer {
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .history_block .history_select_wrapper .history_select_list .history_select_item {
+    font-size: 36px;
+  }
+  .history_block .history_select_wrapper .history_select_list .owl-item.active.selected .history_select_item {
+    font-size: 82px;
+  }
+  .history_block .history_select_wrapper .history_content_list {
+    margin-top: 40px;
+  }
+  .history_block .history_select_wrapper .history_content_list .history_content_item .history_content_title {
+    font-size: 24px;
+  }
+  .history_block .history_select_wrapper .history_content_list .history_content_item p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .history_block .history_select_wrapper {
+    margin-top: 50px;
+  }
+  .history_block .owl-carousel .owl-nav {
+    width: 100%;
+    bottom: 10px;
+  }
+  .history_block .owl-carousel .owl-nav:before {
+    width: 84%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .history_block .history_select_wrapper .history_select_list {
+    min-height: 60px;
+  }
+  .history_block .history_select_wrapper .history_select_list .owl-item.active.selected .history_select_item {
+    padding-right: 30px;
+    font-size: 32px;
+  }
+  .history_block .history_select_wrapper .history_select_list .history_select_item {
+    font-size: 20px;
+  }
+  .history_block .history_select_wrapper .history_content_list {
+    margin-top: 34px;
+  }
+  .history_block .history_select_wrapper .history_content_list .history_content_item .history_content_title {
+    font-size: 18px;
+  }
+  .aside_block {
+    margin-top: 36px;
+  }
+  .footer {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .history_block .owl-carousel .owl-nav:before {
+    width: 76%;
+  }
+}

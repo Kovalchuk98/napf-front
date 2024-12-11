@@ -1,0 +1,57 @@
+.custom_select {
+  position: relative;
+}
+
+.custom_select_button {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  right: 0px;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  width: fit-content;
+  transform: scale(0.8) rotate(90deg);
+}
+
+select {
+  display: none;
+}
+
+.select_selected {
+  padding-right: 40px !important;
+  padding-bottom: 4px;
+  color: #253238;
+  font-size: 32px;
+  height: fit-content;
+  font-weight: 900;
+  border-bottom: 1px solid #879FD6 !important;
+}
+
+.select_items div {
+  color: #879FD6;
+}
+
+.select_items div, .select_selected {
+  border: 1px solid transparent;
+  padding-left: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.select_items {
+  position: absolute;
+  background-color: #ffffff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  color: #879FD6;
+  font-size: 24px;
+  font-weight: 900;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1490196078);
+}
+
+.select_hide {
+  display: none;
+}

@@ -1,0 +1,114 @@
+.pagination_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.pagination_wrapper .pagination_list {
+  display: flex;
+  align-items: center;
+}
+.pagination_wrapper .pagination_list .pagination_item {
+  border: 1px solid #5979C4;
+  border-radius: 4px;
+}
+.pagination_wrapper .pagination_list .pagination_item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 29px;
+  height: 29px;
+  text-decoration: none;
+  color: #5979C4;
+  font-size: 15px;
+  font-weight: 500;
+}
+.pagination_wrapper .pagination_list .pagination_item.active_page {
+  background-color: #FF8409;
+  border-color: #FF8409;
+}
+.pagination_wrapper .pagination_list .pagination_item.active_page a {
+  color: #ffffff;
+}
+.pagination_wrapper .pagination_list .pagination_item:not(.first_page):not(.last_page):not(.prev_page):not(.next_page):hover {
+  background-color: #FF8409;
+  border-color: #FF8409;
+}
+.pagination_wrapper .pagination_list .pagination_item:not(.first_page):not(.last_page):not(.prev_page):not(.next_page):hover a {
+  color: #ffffff;
+}
+.pagination_wrapper .pagination_list .pagination_item:not(:first-of-type) {
+  margin-left: 10px;
+}
+.pagination_wrapper .pagination_list .pagination_separator {
+  display: flex;
+  align-items: end;
+  width: fit-content;
+  height: 100%;
+  margin: 0px 10px;
+}
+.pagination_wrapper .pagination_list .pagination_separator + .pagination_item {
+  margin-left: 0px;
+}
+.pagination_wrapper .pagination_list .first_page a,
+.pagination_wrapper .pagination_list .prev_page a,
+.pagination_wrapper .pagination_list .next_page a,
+.pagination_wrapper .pagination_list .last_page a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.pagination_wrapper .pagination_list .first_page a:hover svg path,
+.pagination_wrapper .pagination_list .prev_page a:hover svg path,
+.pagination_wrapper .pagination_list .next_page a:hover svg path,
+.pagination_wrapper .pagination_list .last_page a:hover svg path {
+  fill: #FF8409;
+  stroke: #FF8409;
+}
+.pagination_wrapper .pagination_list .first_page svg,
+.pagination_wrapper .pagination_list .prev_page svg {
+  transform: scaleX(-1);
+}
+.pagination_wrapper .pagination_list .first_page svg, .pagination_wrapper .pagination_list .last_page svg {
+  width: 25px;
+}
+.pagination_wrapper .pagination_list .prev_page svg, .pagination_wrapper .pagination_list .next_page svg {
+  width: 26px;
+}
+.pagination_wrapper .pagination_list .first_page,
+.pagination_wrapper .pagination_list .prev_page {
+  margin-right: 20px;
+}
+.pagination_wrapper .pagination_list .last_page,
+.pagination_wrapper .pagination_list .next_page {
+  margin-left: 20px;
+}
+.pagination_wrapper .pagination_list .next_page {
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .pagination_wrapper .pagination_list .pagination_item a {
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+  }
+  .pagination_wrapper .pagination_list .pagination_separator {
+    margin: 0px 4px;
+  }
+  .pagination_wrapper .pagination_list .prev_page {
+    margin-right: 10px;
+  }
+  .pagination_wrapper .pagination_list .next_page {
+    margin-left: 20px;
+  }
+  .pagination_wrapper .pagination_list .first_page svg, .pagination_wrapper .pagination_list .last_page svg {
+    width: 20px;
+  }
+  .pagination_wrapper .pagination_list .prev_page svg, .pagination_wrapper .pagination_list .next_page svg {
+    width: 20px;
+  }
+}
