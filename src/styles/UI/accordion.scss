@@ -1,0 +1,169 @@
+.accordion {
+
+    .accordion_header {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        .accordion_title_wrapper {
+            position: relative;
+
+            &:after {
+                display: flex;
+                content: url('../../icons/_1.svg');
+                position: absolute;
+                top: 0;
+                align-items: center;
+                padding: 0;
+                margin: 0;
+                top: 0;
+                bottom: 0;
+                width: auto;
+                height: auto;
+                transform: rotate(180deg) scale(0.8);
+                right: 10px;
+                transition: transform .5s ease;
+            }
+
+            .accordion_title {
+                font-size: 18px;
+            }
+        }
+
+        &.active_accordion {
+            background-color: #F3F4F8;
+            .accordion_title_wrapper {
+                &:after {
+                    filter: invert(59%) sepia(47%) saturate(5116%) hue-rotate(353deg) brightness(100%) contrast(104%);
+                    transform: rotate(90deg) scale(0.7);
+                    transition: transform .5s ease;
+                }
+            }
+        }
+    }
+
+    .accordion_header_reverse {
+        padding: 20px 0px 20px 0px;
+
+        .accordion_title_wrapper {
+            position: relative;
+            padding-left: 40px;
+
+            &:before {
+                display: flex;
+                content: url('../../icons/_1.svg');
+                position: absolute;
+                top: 0;
+                align-items: center;
+                padding: 0;
+                margin: 0;
+                top: 0;
+                bottom: 0;
+                width: auto;
+                height: auto;
+                transform: rotate(0deg) scale(0.7);
+                left: 0px;
+                transition: transform .5s ease;
+            }
+
+            &::after {
+                display: none;
+            }
+
+            .accordion_title {
+                font-size: 18px;
+            }
+        }
+
+
+
+        &:hover:not(.active_accordion) {
+            background-color: #879FD6;
+
+
+            .accordion_title_wrapper {
+
+                &:before {
+                    filter: brightness(0) invert(1);
+                }
+
+                .accordion_title {
+                    color: #ffffff;
+                }
+            }
+
+            .documents_item_counter {
+                border-color: #ffffff;
+
+                p {
+                    color: #ffffff;
+                }
+            }
+        }
+
+
+        &.active_accordion {
+            .accordion_title_wrapper {
+
+                &:before {
+                    filter: invert(59%) sepia(47%) saturate(5116%) hue-rotate(353deg) brightness(100%) contrast(104%);
+                    transition: transform .5s ease;
+                    transform: rotate(90deg) scale(0.7);
+                }
+            }
+        }
+
+        .documents_item_title_wrapper {
+            display: flex;
+
+            .documents_item_title {
+                font-size: 18px;
+            }
+        }
+
+        .documents_item_counter {
+            margin-left: auto;
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 15px 12px 18px;
+            border-left: 1px dashed #879FD6;
+
+            p {
+                font-size: 15px;
+                color: #879FD6;
+                min-width: 90px;
+
+                span {
+                    margin-left: 0px;
+                }
+            }
+        }
+
+
+    }
+
+    .accordion_content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+
+        .accordion_content_wrapper {
+
+
+            .hide_content_wrapper {
+                .hide_content_button {
+                    width: fit-content;
+                    margin: 0 auto;
+                    img {
+                        display: block;
+                        cursor: pointer;
+                        margin: 0 auto;
+                        width: 25px;
+                        transform: rotate(90deg);
+    
+                    }
+                }
+            }
+        }
+    }
+}
