@@ -1,0 +1,250 @@
+.history_block {
+
+  .owl-carousel {
+    .owl-item {
+      &.selected {
+        width: fit-content !important;
+        ;
+      }
+    }
+
+    .owl-dots {
+      margin-top: 30px;
+    }
+
+    .owl-nav {
+      position: absolute;
+      width: 100%;
+      bottom: 10px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 92%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: #879FD6;
+        bottom: 0;
+      }
+
+      .owl-next,
+      .owl-prev {
+        z-index: 1;
+
+        svg {
+          height: fit-content;
+        }
+      }
+
+      .owl-prev {
+        svg {
+          transform: rotate(-180deg)
+        }
+      }
+    }
+  }
+
+  .history_select_wrapper {
+    margin-top: 60px;
+    min-height: 100px;
+
+    .history_select_list {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-height: 110px;
+
+
+      .owl-item.active.selected {
+
+        .history_select_item {
+          padding-right: 30px;
+          color: #253238;
+          font-size: 96px;
+
+        }
+      }
+
+      .history_select_item {
+        display: block;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        color: #90A4AF;
+        font-size: 48px;
+        font-weight: 900;
+        transition: font-size .1s ease;
+
+        &:hover {
+          color: #253238;
+        }
+      }
+
+      .owl-nav {
+        height: fit-content;
+        bottom: 0px;
+
+        .owl-prev,
+        .owl-next {
+          svg {
+            width: 26px;
+          }
+        }
+      }
+    }
+
+    .history_content_list {
+      margin-top: 28px;
+
+      .history_content_item {
+        height: 0;
+        transition: opacity 0.5s ease, visibility 0.5s;
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        overflow: hidden;
+
+        p {
+          font-size: 18px;
+          margin-top: 26px;
+        }
+
+        .history_content_title {
+          font-size: 30px;
+          font-weight: 700;
+        }
+
+
+        &.selected_content_item {
+          opacity: 1;
+          visibility: visible;
+          height: auto;
+        }
+      }
+    }
+
+  }
+}
+
+.footer {
+  margin-top: 74px;
+}
+
+@media screen and (max-width: 1540px) {
+  .aside_block {
+    margin-top: 50px;
+  }
+
+  .footer {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .history_block {
+
+    .history_select_wrapper {
+
+      .history_select_list {
+        .history_select_item {
+          font-size: 36px;
+        }
+
+        .owl-item.active.selected {
+          .history_select_item {
+            font-size: 82px;
+          }
+        }
+      }
+
+      .history_content_list {
+        margin-top: 40px;
+
+        .history_content_item {
+          .history_content_title {
+            font-size: 24px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .history_block {
+
+    .history_select_wrapper {
+      margin-top: 50px;
+    }
+
+    .owl-carousel {
+      .owl-nav {
+        width: 100%;
+        bottom: 10px;
+
+        &:before {
+          width: 84%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .history_block {
+    .history_select_wrapper {
+
+      .history_select_list {
+        min-height: 60px;
+
+        .owl-item.active.selected {
+          .history_select_item {
+            padding-right: 30px;
+            font-size: 32px;
+          }
+        }
+
+        .history_select_item {
+          font-size: 20px;
+        }
+      }
+
+      .history_content_list {
+        margin-top: 34px;
+
+        .history_content_item {
+          .history_content_title {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .aside_block {
+    margin-top: 36px;
+  }
+
+  .footer {
+    margin-top: 60px;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .history_block {
+    .owl-carousel {
+      .owl-nav {
+        &:before {
+          width: 76%;
+        }
+      }
+    }
+  }
+}

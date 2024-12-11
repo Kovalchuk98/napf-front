@@ -1,0 +1,548 @@
+.workgroup_block {
+
+
+    .workgroup_block_description {
+        font-size: 18px;
+        margin-top: 25px;
+    }
+
+    .workgroup_items {
+        margin-top: 30px;
+
+        .workgroup_item {
+            border-bottom: 1px solid #879FD6;
+
+            &:nth-last-of-type(even) {
+                background-color: #F3F4F8;
+            }
+
+            .workgroup_item_header {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                padding: 25px 10px;
+
+                .workgroup_item_title_wrapper {
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    pointer-events: none;
+
+                    .workgroup_item_title {
+                        margin-left: 20px;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+
+                    .workgroup_item_number {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 4px;
+                        background-color: #879FD6;
+                        color: #ffffff;
+                        font-size: 14px;
+                        min-width: 25px;
+                        min-height: 25px;
+                    }
+                }
+
+                .workgroup_item_arrow {
+                    margin-left: auto;
+                    display: flex;
+                    justify-content: center;
+                    transform: all .3s ease;
+
+                    svg {
+                        width: 25px;
+                        height: 25px;
+                    }
+
+                    transform: scaleX(-1);
+                }
+
+                &:hover:not(.active_accordion) {
+                    background-color: #879FD6;
+
+
+                    .workgroup_item_title_wrapper {
+
+                        .workgroup_item_title {
+                            color: #ffffff;
+                        }
+
+                        .workgroup_item_number {
+                            background-color: #ffffff;
+                            color: #879FD6;
+                        }
+                    }
+
+                    .workgroup_item_arrow {
+                        path {
+                            fill: #ffffff;
+                        }
+                    }
+                }
+
+                &.active_accordion {
+                    background-color: #ffffff;
+
+                    .workgroup_item_arrow {
+                        transition: all .5s ease;
+                        transform: rotate(90deg);
+
+                        svg {
+                            path {
+                                fill: #FF720B;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .workgroup_item_content {
+                background-color: #ffffff;
+                padding-left: 55px;
+                padding-right: 10px;
+
+                .workgroup_content_text,
+                .workgroup_content_title,
+                .workgroup_content_description {
+                    font-size: 18px;
+                }
+
+                .workgroup_content_title {
+                    font-weight: 700;
+                }
+
+                .workgroup_content_text {
+                    font-weight: 400;
+                    margin-top: 16px;
+                }
+
+                .president_title {
+                    margin-top: 26px;
+                }
+
+                .members_title {
+                    margin-top: 36px;
+                }
+
+                table {
+                    display: table;
+                    width: auto;
+                    margin-top: 18px;
+
+                    tbody {
+                        tr {
+                            &:first-of-type {
+                                td {
+                                    border-top: 1px solid #90A4AF;
+                                }
+                            }
+
+                            td {
+                                padding: 24px 15px;
+
+                                &:first-child {
+                                    max-width: 368px;
+                                    width: 368px;
+                                    font-weight: 500;
+                                }
+
+                                &:last-child {
+                                    max-width: 304px;
+                                    width: 304px;
+
+                                    a {
+                                        word-break: normal;
+                                        text-decoration: none;
+                                        color: #879FD6;
+                                        width: 100%;
+
+                                        &:hover {
+                                            color: #5979C4;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+                // Materials
+                .materials_title {
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin-top: 50px;
+                }
+
+                .workgroup_materials_list {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 26px;
+
+                    .workgroup_materials_item {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 20px;
+
+                        &:nth-of-type(even) {
+                            background-color: #F3F4F8;
+                        }
+
+                        .materials_document_title {
+                            display: flex;
+                            align-items: center;
+                            max-width: 360px;
+                            width: 100%;
+
+                            img {
+                                width: 36px;
+                            }
+
+                            p {
+                                font-size: 18px;
+                                margin-left: 10px;
+                            }
+                        }
+
+                        .materials_document_counter {
+                            display: flex;
+                            margin-right: auto;
+                            padding: 14px 5px 14px 16px;
+                            border-left: 1px dashed #879FD6;
+
+                            a,
+                            span {
+                                font-size: 15px;
+                                color: #879FD6;
+                            }
+
+                            a {
+                                text-decoration: none;
+                            }
+
+                            span {
+                                margin-right: 6px;
+                            }
+                        }
+
+                        .materials_document_download {
+                            display: flex;
+                            align-items: center;
+                            padding: 6px 10px;
+                            background-color: #879FD6;
+                            border-radius: 4px;
+                            text-decoration: none;
+
+                            img {
+                                display: none;
+                            }
+
+                            svg {
+                                width: 18px;
+                                height: 18px;
+                                margin-right: 10px;
+                            }
+
+                            p,
+                            span {
+                                font-size: 15px;
+                                color: #ffffff;
+                            }
+
+                            p {
+                                font-weight: 500;
+                            }
+
+                            span {
+                                font-weight: 300;
+                            }
+
+                        }
+                    }
+                }
+
+                .hide_content_wrapper {
+                    display: flex;
+                    justify-content: center;
+
+                    .hide_content_button {
+
+                        padding: 22px 0px;
+
+                        img {
+                            cursor: pointer;
+                            width: 25px;
+                            transform: rotate(90deg);
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .pagination_wrapper {
+        display: none;
+    }
+}
+
+.footer {
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 1540px) {
+    .workgroup_block {
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .workgroup_block {
+
+        .workgroup_block_description {
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        .workgroup_items {
+            .workgroup_item {
+                .workgroup_item_header {
+                    .workgroup_item_title_wrapper {
+                        .workgroup_item_title {
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+                .workgroup_item_content {
+
+                    .workgroup_content_text,
+                    .workgroup_content_title,
+                    .workgroup_content_description {
+                        font-size: 16px;
+                    }
+
+                    .members_title {
+                        margin-top: 40px;
+                    }
+
+                    table {
+                        tbody {
+                            tr {
+                                td {
+                                    font-size: 16px;
+                                    padding: 26px 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .materials_title {
+                    font-size: 18px;
+                    margin-top: 48px;
+                }
+
+                .workgroup_materials_list {
+
+                    margin-top: 16px;
+
+                    .workgroup_materials_item {
+
+                        .materials_document_title {
+
+                            max-width: 360px;
+                            width: 100%;
+
+                            p {
+                                font-size: 16px !important;
+
+                            }
+                        }
+
+                        .materials_document_counter {}
+
+                        .materials_document_download {}
+                    }
+                }
+            }
+        }
+
+        .pagination_wrapper {
+            display: flex;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .workgroup_block {
+        .workgroup_items {
+            .workgroup_item {
+                .workgroup_item_content {
+
+                    .workgroup_materials_list {
+
+                        margin-top: 20px;
+
+                        .workgroup_materials_item {
+
+                            padding: 8px 9px 8px 5px;
+
+                            .materials_document_title {
+
+                                max-width: 360px;
+                                width: 100%;
+
+                                img {
+                                    display: none;
+                                }
+
+                                p {
+                                    margin-left: 0;
+                                    font-size: 16px !important;
+
+                                }
+                            }
+
+                            .materials_document_counter {
+                                display: none;
+
+                            }
+
+                            .materials_document_download {
+                                background-color: transparent;
+                                padding: 20px 5px 20px 8px;
+
+                                p {
+                                    color: #879FD6;
+                                    margin-left: 3px;
+                                    font-size: 14px;
+                                }
+
+                                span {
+                                    display: none;
+                                }
+
+                                svg {
+                                    display: none;
+                                }
+
+                                img {
+                                    display: block;
+                                    width: 24px;
+
+                                }
+
+                                border-left: 1px dashed #879FD6;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .workgroup_block {
+
+        .workgroup_block_description {
+            margin-top: 26px;
+        }
+
+        .workgroup_items {
+            .workgroup_item {
+
+                .workgroup_item_header.active_accordion {
+                    background-color: #F3F4F8;
+                }
+
+                .workgroup_item_content {
+                    background-color: #F3F4F8;
+                    padding: 0px 10px;
+
+                    .workgroup_content_text,
+                    .workgroup_content_title,
+                    .workgroup_content_description {
+                        font-size: 16px;
+                    }
+
+                    .members_title {
+                        margin-top: 30px;
+                    }
+
+                    table {
+                        margin-top: 20px;
+
+                        width: 100%;
+                        tbody {
+                            tr {
+                                &:nth-child(odd) {
+                                    background-color: #ffffff;
+                                }
+
+                                td {
+                                    font-size: 14px;
+                                    padding: 14px 3px;
+
+                                    &:first-of-type {
+                                        max-width: 140px;
+                                    }
+
+                                    &:last-of-type {
+                                        padding-left: 14px;
+                                    }
+                                }
+
+                            }
+                        }
+
+                    }
+
+                    .materials_title {
+                        font-size: 18px;
+                        margin-top: 48px;
+                    }
+
+                    .workgroup_materials_list {
+                        margin-top: 20px;
+
+                        &:nth-of-type(odd) {
+                            background-color: #ffffff;
+                        }
+
+                        .workgroup_materials_item {
+                            padding: 8px 9px 8px 5px;
+
+                            .materials_document_title {
+
+                                max-width: 360px;
+                                width: 100%;
+
+                                img {
+                                    display: none;
+                                }
+
+                                p {
+                                    margin-left: 0;
+                                    font-size: 16px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        margin-top: 60px;
+    }
+}

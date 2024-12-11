@@ -1,0 +1,622 @@
+.pdc_block {
+
+    .block_title {
+        margin-top: 50px;
+    }
+
+    .pdc_members_list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(236px, 236px));
+        column-gap: 18px;
+        row-gap: 18px;
+        margin-top: 30px;
+        justify-content: space-between;
+
+        .pdc_members_item {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 236px;
+            overflow: hidden;
+            border-radius: 8px;
+            border: 1px solid #F3F4F8;
+
+            .pdc_logo {
+                display: block;
+                height: auto;
+                padding-left: 12px;
+                padding-right: 12px;
+                transform: translateY(0px);
+                width: 100%;
+                max-height: 120px;
+                object-fit: contain;
+                transition: all .5s ease;
+            }
+
+            a {
+                position: absolute;
+                transition: transform .3s ease-in-out;
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                color: #5979C4;
+                transform: translateY(140px);
+
+                img {
+                    max-width: 18px;
+                    width: 100%;
+                    margin-right: 5px;
+                }
+            }
+
+            &:hover,
+            &.active_wrapper {
+                border-width: 2px;
+
+                .pdc_logo {
+                    transition: transform .3s ease;
+                    transform: translateY(-20px);
+                }
+
+                a {
+                    transition: transform .3s ease-in-out;
+                    transform: translateY(60px);
+                }
+
+
+            }
+        }
+    }
+
+    .pdc_calc_block {
+        display: flex;
+        margin-top: 40px;
+        border-top: 1px dashed #5979C4;
+        border-bottom: 1px dashed #5979C4;
+
+        .pdc_calc_wrapper {
+            padding: 25px 40px 32px 20px;
+            overflow: hidden;
+            cursor: default;
+
+            .pdc_calc_content {
+                display: flex;
+                align-items: center;
+
+                .pdc_calc_info {
+                    position: relative;
+                    transition: transform .5s ease;
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 620px;
+                    margin-left: 10px;
+
+                    p {
+                        font-size: 24px;
+                        font-weight: 700;
+                    }
+
+
+
+                    .block_link_filled {
+                        position: absolute;
+                        transition: bottom .3s ease-in-out;
+                        display: flex;
+                        align-items: center;
+                        bottom: -120px;
+                    }
+                }
+            }
+
+
+            &.active_wrapper {
+                .pdc_calc_info {
+                    transition: transform .3s ease-in-out;
+                    transform: translateY(0px);
+
+                    .block_link_filled {
+                        margin-top: 15px;
+                    }
+                }
+            }
+
+        }
+
+        &:hover {
+            .pdc_calc_wrapper {
+                .pdc_calc_content {
+
+                    .pdc_calc_info {
+                        transition: transform .3s ease-in-out;
+                        transform: translateY(-25px);
+
+                        .block_link_filled {
+                            bottom: -45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .pdc_bottom_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        margin-top: 30px;
+
+        .pdc_myfin_wrapper {
+            padding: 30px 20px;
+
+            .pdc_myfin_content {
+                .pdc_data_info {
+                    margin-left: 18px;
+                }
+            }
+        }
+
+        .pdc_finkult_wrapper {
+            padding: 38px 18px 38px 28px;
+
+            .pdc_finkult_content {
+                .pdc_data_info {
+                    margin-left: 18px;
+                }
+            }
+        }
+
+        .pdc_myfin_wrapper,
+        .pdc_finkult_wrapper {
+            display: flex;
+            align-items: center;
+            border-radius: 12px;
+            background-color: #F3F4F8;
+            overflow: hidden;
+            cursor: default;
+
+            .pdc_myfin_content,
+            .pdc_finkult_content {
+                position: relative;
+                display: flex;
+                align-items: center;
+
+                .pdc_data_info {
+                    transition: transform .5s ease;
+
+                    p {
+                        font-size: 24px;
+                        font-weight: 700;
+
+                        &:first-of-type {
+                            font-weight: 300;
+                        }
+                    }
+
+                }
+
+                .block_link_filled {
+                    position: absolute;
+                    transition: bottom .3s ease-in-out;
+                    display: flex;
+                    align-items: center;
+                    bottom: -120px;
+                }
+            }
+
+
+
+            &:hover,
+            &.active_wrapper {
+                .pdc_data_info {
+                    transition: transform .3s ease-in-out;
+                    transform: translateY(-25px);
+
+                    .block_link_filled {
+                        bottom: -40px;
+                    }
+                }
+
+            }
+        }
+
+        .pdc_myfin {
+            padding: 30px 20px;
+
+            .pdc_data_info {
+                margin-left: 18px;
+
+            }
+        }
+
+        .pdc_finkult {
+            padding: 38px 4px 38px 28px;
+
+            .pdc_data_info {
+                margin-left: 18px;
+            }
+        }
+    }
+
+    .block_link_filled {
+        background-color: transparent;
+        border: 1px solid #879FD6;
+        padding: 5px 10px;
+
+        span {
+            color: #879FD6;
+        }
+
+        svg {
+            margin-right: 10px;
+
+            path {
+                stroke: #879FD6
+            }
+        }
+
+        &:hover,
+        &.active_link {
+            background-color: #879FD6;
+
+            svg {
+                path {
+                    stroke: #ffffff;
+                }
+            }
+
+            span {
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.footer {
+    margin-top: 120px;
+}
+
+@media screen and (max-width: 1540px) {
+    .pdc_block {
+
+        .pdc_members_list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(218px, 218px));
+            column-gap: 20px;
+            row-gap: 20px;
+
+            .pdc_members_item {
+                width: 218px;
+                height: 218px;
+                border-width: 2px;
+            }
+        }
+
+        .pdc_calc_block {
+            margin-top: 30px;
+            justify-content: center;
+
+            .pdc_calc_wrapper {
+                &.active_wrapper {
+                    .pdc_calc_content {
+                        .pdc_calc_info {
+                            transform: none;
+                            transition: none;
+
+                            .block_link_filled {
+                                position: static;
+                                transition: none;
+
+                                &:hover {
+                                    background-color: #5979C4;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .pdc_finkult_wrapper,
+        .pdc_myfin_wrapper {
+            &.active_wrapper {
+
+                .pdc_finkult_content,
+                .pdc_myfin_content {
+                    .pdc_data_info {
+                        transform: none;
+                        transition: none;
+                    }
+
+                    .block_link_filled {
+                        margin-top: 15px;
+                        position: static;
+                        transition: none;
+
+                        &:hover {
+                            background-color: #5979C4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .aside_block {
+        margin-top: 60px;
+    }
+
+    .footer {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+
+    .pdc_block {
+
+        .block_title {
+            margin-top: 40px;
+        }
+
+        .pdc_calc_block {
+            .pdc_calc_wrapper {
+                .pdc_calc_info {
+
+                    .active_link {
+                        position: static;
+                        transition: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .pdc_block {
+        .pdc_calc_block {
+            .pdc_calc_wrapper {
+                .pdc_calc_content {
+
+                    .pdc_calc_info {
+                        p {
+                            font-size: 18px;
+                        }
+
+                        .active_link {
+                            position: static;
+                            transition: none;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .pdc_bottom_wrapper {
+
+            .pdc_myfin_wrapper,
+            .pdc_finkult_wrapper {
+
+                .pdc_myfin_content,
+                .pdc_finkult_content {
+                    .pdc_data_info {
+                        p {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .pdc_block {
+
+        .pdc_calc_block {
+            .pdc_calc_wrapper {
+                padding: 43px 10px;
+
+                .pdc_calc_content {
+                    flex-direction: column;
+
+                    img {
+                        width: 100%;
+                        max-width: 80px;
+                    }
+
+                    .pdc_calc_info {
+                        margin-left: 0;
+
+                        p {
+                            max-width: 350px;
+                            margin-top: 26px;
+
+                            text-align: center;
+                        }
+                    }
+
+                    .block_link_filled.active_link {
+                        span {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                &.active_wrapper {
+                    .pdc_calc_info {
+                        .block_link_filled {
+                            margin: 30px auto;
+                            margin-bottom: 0px;
+                        }
+                    }
+
+                }
+            }
+        }
+
+
+        .pdc_bottom_wrapper {
+            grid-template-columns: 1fr;
+            row-gap: 20px;
+
+            .pdc_myfin_wrapper,
+            .pdc_finkult_wrapper {
+                padding: 15px 15px 20px 15px;
+
+                .pdc_myfin_content,
+                .pdc_finkult_content {
+                    img {
+                        width: 100%;
+                        max-width: 80px;
+                    }
+
+                    .pdc_data_info {
+                        p {
+                            font-size: 18px;
+                        }
+
+
+                    }
+                }
+
+                .pdc_finkult_content {
+                    .block_link_filled {
+                        svg {
+                            width: 100%;
+                            max-width: 18px;
+                        }
+
+                        span {
+                            white-space: initial;
+                        }
+                    }
+                }
+
+                .block_link_filled.active_link {
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main_content {
+        overflow: hidden;
+    }
+
+    .pdc_block {
+
+        .pdc_members_block {
+            position: relative;
+            padding: 20px 0px 30px 0px;
+            margin-top: 22px;
+
+            .pdc_members_list {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .block_title {
+                margin-top: 0px;
+            }
+
+            &:before {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: -100%;
+                width: 220%;
+                height: 100%;
+                background-color: #F3F4F8;
+                z-index: -1;
+            }
+
+            .owl-carousel {
+
+                .owl-dots {
+                    margin-top: 24px;
+                }
+
+                .owl-item {
+                    overflow: hidden;
+                    background-color: #ffffff;
+                    border-radius: 8px;
+
+                    .pdc_members_item {
+                        width: 80%;
+                        border: none;
+
+                        border-width: 2px;
+
+                        .pdc_logo {
+                            transition: none;
+                            transform: translateY(-10px);
+                        }
+
+                        a {
+                            transition: none;
+                            transform: translateY(70px);
+                        }
+                    }
+                }
+
+                .owl-item.active {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+
+        }
+
+
+        .pdc_calc_block {
+            margin-top: 0px;
+            border: none;
+        }
+
+        .pdc_bottom_wrapper {
+            margin-top: 10px;
+
+            .pdc_finkult_wrapper,
+            .pdc_myfin_wrapper {
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: flex-start;
+
+                .pdc_myfin_content {}
+
+                .pdc_myfin_content,
+                .pdc_finkult_content {
+                    .pdc_data_info {}
+                }
+
+                .block_link_filled.active_link {
+                    margin-right: 40px;
+                    margin-left: 40px;
+                    margin-top: 16px;
+
+                    &:hover {
+                        background-color: #5979C4;
+                    }
+                }
+            }
+        }
+    }
+
+    .aside_block {
+        margin-top: 54px;
+    }
+
+    .footer {
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,175 @@
+.contacts_block {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+
+  .contacts_info {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      font-size: 18px;
+      font-weight: 600;
+
+      span {
+        font-weight: 400;
+      }
+    }
+
+    .contacts_info_wrapper {
+
+      p {
+        font-size: 18px;
+        font-weight: 600;
+
+        span {
+          font-weight: 400;
+        }
+
+        &:first-of-type {
+          span {
+            display: block;
+            margin-top: 10px;
+          }
+        }
+
+        &:not(:first-of-type) {
+          margin-top: 26px;
+        }
+
+        &:last-of-type {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .contacts_address_wrapper {
+    order: 1;
+    margin-top: auto;
+    background-color: #F3F4F8;
+    border-radius: 12px;
+    padding: 26px 20px 26px 20px;
+
+    p {
+      font-size: 18px;
+      font-weight: 600;
+
+      span,
+      a {
+        font-weight: 400;
+      }
+
+      &:first-of-type {
+        span {
+          display: block;
+          margin-top: 10px;
+        }
+      }
+
+      &:not(:first-of-type) {
+        margin-top: 26px;
+      }
+
+      &:last-of-type {
+        font-weight: 700;
+      }
+    }
+
+    a {
+      color: #5979C4;
+
+      &:hover {
+        color: #879FD6;
+      }
+    }
+
+  }
+
+  .contacts_map {
+    iframe {
+      border-radius: 12px;
+      width: 100%;
+    }
+  }
+}
+
+.footer {
+  margin-top: 46px;
+}
+
+@media screen and (max-width: 1540px) {
+  .aside_block {
+    margin-top: 46px;
+  }
+
+  .footer {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .contacts_block {
+
+    .contacts_map {
+      iframe {
+        height: 320px;
+      }
+    }
+
+    .contacts_info {
+
+      .contacts_info_wrapper {
+        p {
+          font-size: 16px;
+
+          &:not(:first-of-type) {
+            margin-top: 20px;
+          }
+
+          span,
+          a {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .contacts_address_wrapper {
+      p {
+        font-size: 16px;
+
+        &:not(:first-of-type) {
+          margin-top: 20px;
+        }
+      }
+    }
+
+
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contacts_block {
+    margin-top: 30px;
+    grid-template-columns: 1fr;
+
+    .contacts_map {
+      margin-top: 20px;
+    }
+
+    .contacts_address_wrapper {
+      margin-top: 20px;
+    }
+  }
+
+  .aside_block {
+    margin-top: 60px;
+  }
+
+  .footer {
+    margin-top: 60px;
+  }
+
+}

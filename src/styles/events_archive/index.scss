@@ -1,0 +1,194 @@
+.events_block {
+
+    .page_title, .block_title {
+        margin-bottom: 0px;
+    }
+
+    .events_select_date_wrapper {
+        display: flex;
+        align-items: flex-end;
+        margin-top: 30px;
+        width: 100%;
+
+        .custom_select {
+            position: relative;
+            margin-right: 8px;
+        }
+
+        .events_select_month_wrpper {
+            width: 100%;
+            border-bottom: 1px solid #879FD6;
+            padding-bottom: 10px;
+            overflow: hidden;
+
+            .events_month_list {
+                .active_month{
+                    .events_month_item {
+                        p {
+                            color: #253238;
+                        }
+                    }
+                }
+                .events_month_item {
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+
+                    &:hover {
+                        p {
+                            color: #253238;
+                        }
+                    }
+                    p {
+                        font-size: 20px;
+                        font-weight: 900;
+                        color: #90A4AF;
+                        width: fit-content;
+                    }
+                }
+                
+                .owl-nav {
+                    .owl-prev, .owl-next {
+                        top: -5px;
+                        bottom: 0;
+                        padding: 0;
+                        border-radius: 0;
+                        svg {
+                            height: fit-content;
+                            width: 21px;
+                        }
+                    }
+                    .owl-prev {
+                        transform: scaleX(-1);
+                    }
+                    .owl-next {
+                        transform: scaleX(1);
+                    }
+                }
+            }
+        }
+    }
+
+
+    .events_block_items {
+        margin-top: 20px;
+        .events_block_item.events_main_item {
+           
+            .events_item_wrapper {
+                .item_info {
+                    &:not(:last-of-type) {
+                        // padding-bottom: 28px;
+                    }
+                }
+            }
+            
+            //Events page item
+            .item_main_info {
+                display: flex;
+                align-items: flex-start;
+
+                .item_main_info_data {
+                    width: 100%;
+                    // margin-right: 50px;
+
+                    .item_info_title{
+                        max-width: 670px;
+                    }
+
+                    .item_info_bottom{
+                        .item_info_time {
+                            order: 0;
+                            margin-left: 0;
+                            svg {
+                                path {
+                                    fill: #879FD6;
+                                }
+                            }
+                        }
+                        .item_info_location {
+                            order: 1;
+                            margin-left: 15px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .events_block_items.events_archive_items {
+        .events_block_item.events_main_item {
+
+
+            .item_date_wrapper {
+                .item_date_number {}
+                .item_date_month{}
+                .item_date_weekday{}
+
+                .item_date_number, 
+                .item_date_month, 
+                .item_date_weekday {
+                }
+            }
+
+
+            .events_item_wrapper {
+
+                .item_main_info {
+                    .item_main_info_data {
+                        .item_info_title{}
+    
+                        .item_info_bottom{
+                            .item_info_time {
+                                svg {
+                                    path {
+                                        fill: #90A4AF !important;
+                                    }
+                                }
+                            }
+                            .item_info_location {
+                            }
+                        }
+    
+                    }
+
+                }
+            }
+
+        }
+    }
+}
+
+.aside_block {
+    .mailing_block {
+        margin-bottom: 20px;
+    }
+}
+
+.footer {
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 1540px) {
+    .aside_block {
+        margin-top: 60px;
+    }
+}
+
+
+@media screen and (max-width: 1240px) {
+    .footer {
+        margin-top: 80px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .aside_block {
+        margin-top: 64px;
+    }
+
+    .footer {
+        margin-top: 56px;
+    }
+}

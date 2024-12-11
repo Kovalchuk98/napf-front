@@ -1,0 +1,220 @@
+.events_block {
+    display: flex;
+    flex-direction: column;
+  
+    .events_header {
+      margin-bottom: 14px;
+  
+      .events_title {
+        text-transform: uppercase;
+        font-size: 24px;
+        margin-bottom: 0px;
+      }
+  
+      .block_link {
+        a {
+          margin-left: 3px;
+        }
+  
+        svg {
+          width: 18px;
+        }
+  
+        &:hover {
+          svg {
+            path {
+              fill: #FF8409
+            }
+          }
+        }
+      }
+    }
+  
+    .events_block_items {
+      
+      .events_block_item {
+        display: flex;
+        padding: 20px 0px;
+        border-top: 1px dashed #5979C4;
+        
+  
+        .item_date_wrapper {
+
+
+          .item_date_number,
+          .item_date_month,
+          .item_date_weekday {
+            text-align: center;
+            min-width: 80px;
+            width: 95px;
+    
+          }
+  
+          .item_date_number {
+            color: #253238;
+            font-size: 60px;
+            font-weight: 700;
+          }
+  
+          .item_date_month,
+          .item_date_weekday {
+            font-size: 16px;
+          }
+  
+          .item_date_month {
+            font-weight: 700;
+          }
+  
+          .item_date_weekday {
+            font-weight: 300;
+          }
+        }
+        .events_item_wrapper {
+          display: flex;
+          flex-direction: column;
+          .item_info {
+            // width: 100%;
+            margin-left: 40px;
+    
+            .item_info_title {
+              text-decoration: none;
+              color: #253238;
+              font-size: 20px;
+              font-weight: 700;
+    
+              &:hover {
+                color: #5979C4;
+              }
+            }
+    
+            .item_info_bottom {
+              display: flex;
+              align-items: center;
+              margin-top: 16px;
+
+              .item_info_location, 
+              .item_info_time {
+                display: flex;
+                align-items: center;
+
+                img {
+                  width: 24px;
+                }
+                svg {
+                  width: 24px;
+                  height: fit-content;
+                }
+              }
+              
+    
+    
+              .item_info_location,
+              .item_info_time {
+                // margin-left: 2px;
+                color: #5979C4;
+                font-size: 14px;
+              }
+    
+              .item_info_time {
+                margin-left: 16px;
+              }
+            }
+
+              &:not(:last-of-type) {
+                padding-bottom: 28px;
+                border-bottom: 1px solid #5979C4;
+            }
+
+            &:not(:first-of-type) {
+                padding-top: 15px;
+            }
+          }
+        }
+      }
+    }
+  
+    .review_news_link {
+      margin-top: auto;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (max-width: 1540px) {
+    .events_block {
+      .events_block_items {
+        .events_block_item {
+          .events_item_wrapper {
+            .item_info {
+              margin-left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .events_block {
+
+        .events_block_items {
+          .events_block_item {
+                &:first-of-type {
+                  border-top: none;
+                }
+    
+            .item_date_wrapper {
+    
+              .item_date_number {
+                font-size: 36px;
+              }
+    
+              .item_date_month,
+              .item_date_weekday {
+                font-size: 14px;
+              }
+            }
+    
+            .events_item_wrapper {
+
+            .item_info {
+              // margin-left: 20px;
+    
+              .item_info_title {
+                font-size: 16px;
+              }
+    
+              .item_info_bottom {
+                display: flex;
+                align-items: center;
+                margin-top: 16px;
+    
+    
+                .item_info_location,
+                .item_info_time {
+                  color: #5979C4;
+                  font-size: 12px;
+                }
+    
+                .item_info_time {
+                  margin-left: 8px;
+                }
+              }
+            }
+            }
+
+          }
+        }
+      }
+  }
+
+  @media screen and (max-width: 768px) {
+    .events_block {
+        .events_header {
+          .events_title {
+            font-size: 20px;
+          }
+        }
+      }
+  }
+
+

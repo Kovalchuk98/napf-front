@@ -1,0 +1,633 @@
+.mail_edit_block {
+    margin-top: 30px;
+
+    .page_title {
+        margin-bottom: 46px;
+    }
+
+    .mail_edit_wrapper {
+        width: 100%;
+        overflow: hidden;
+
+        h4 {
+            margin-bottom: 10px;
+        }
+
+        .mail_edit_inputs_wrapper {
+            display: grid;
+            grid-template-columns: minmax(auto, 466px) auto auto auto;
+            column-gap: 60px;
+            row-gap: 30px;
+
+            .mail_edit_title,
+            .mail_edit_tag {
+                .default_input_wrapper {
+                    padding: 6px 10px;
+                    border-width: 1px;
+                    border-radius: 4px;
+                }
+            }
+
+            .mail_edit_title {
+                grid-column: 1 / 5;
+            }
+
+            .mail_edit_tag {
+                h4 {
+                    display: inline-block;
+                }
+            }
+
+            .mail_edit_control_date {
+                max-width: 170px;
+
+                .datetime_picker {
+                    max-width: 170px;
+                    width: 170px;
+                    padding: 6px 10px;
+                    border-width: 1px;
+                    border-radius: 4px;
+                    font-size: 16px !important;
+
+                    &::placeholder {
+                        font-size: 16px !important;
+                    }
+
+                    img {
+                        width: 22px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            .mail_edit_vote {
+
+                .mail_edit_vote_wrapper {
+                    position: relative;
+                    z-index: 4;
+                    display: flex;
+                    align-items: center;
+                    column-gap: 18px;
+                    margin-top: 18px;
+                }
+            }
+
+            .mail_edit_recipients {
+                width: 100%;
+
+                .tags_menu_link {
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 12px 10px 12px 10px;
+                    border-radius: 8px;
+                    box-sizing: border-box;
+                    position: relative;
+                    border: 1px solid #869ED6;
+                    padding: 6px 8px;
+                    border-radius: 6px;
+                    background-color: #ffffff;
+
+                    .tags_text {
+                        color: #253238;
+                        font-size: 18px;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        width: 100%;
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+            }
+
+            .mail_editor_wrapper {
+                grid-column: 1 / 5;
+            }
+        }
+
+        .mailings_recipients_select_wrapper {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            right: -100%;
+            height: 0px;
+            width: 100%;
+            margin-top: 0px;
+            opacity: 0;
+
+            transition:
+                right .3s ease-in-out,
+                height .3s ease-in-out,
+                opacity .3s ease-in-out;
+
+            .accept_button {
+                margin-left: auto;
+                background-color: #ffffff;
+                border: 1px solid #FF720B;
+                padding: 8px 10px;
+
+                svg {
+                    width: 23px;
+                    margin-right: 10px;
+
+                    path {
+                        fill: #FF720B;
+                    }
+                }
+
+                span {
+                    margin-left: 0px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #FF720B;
+                }
+
+                &:hover {
+                    background-color: #FF720B;
+
+                    svg {
+                        path {
+                            fill: #ffffff;
+                        }
+                    }
+
+                    span {
+                        color: #ffffff;
+                    }
+                }
+            }
+
+            .mailings_recipients_select_top {
+                display: flex;
+                flex-wrap: wrap;
+                padding-bottom: 38px;
+                border-bottom: 1px solid #5979C4;
+
+
+                p {
+                    width: 100%;
+                }
+
+                .mailings_recipients {
+                    display: flex;
+                    align-items: flex-start;
+                    margin-top: 10px;
+                    width: 100%;
+
+                    .select_top_icon {
+                        width: 24px;
+                        margin-right: 6px;
+                    }
+
+                    p {
+                        margin-right: 50px;
+                    }
+                }
+            }
+
+            .main_tabs_list,
+            .committees_tabs_list,
+            .workgroups_tabs_list {
+                display: flex;
+                justify-items: left;
+                flex-wrap: wrap;
+                row-gap: 30px;
+
+                .tab {
+                    display: flex;
+                    align-items: center;
+                    padding: 8px 10px;
+
+                    p {
+                        text-align: left;
+                        white-space: normal;
+                    }
+
+                    &:not(:last-child) {
+                        margin-right: 20px;
+                    }
+
+                    img,
+                    svg {
+                        width: 23px;
+                        margin-right: 10px;
+                    }
+
+                    &:not(.active_tab):hover {
+                        background-color: #879FD6;
+                    }
+
+                    &:hover,
+                    &.active_tab {
+                        background-color: #5979C4;
+
+                        img {
+                            filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1096%) hue-rotate(266deg) brightness(117%) contrast(100%);
+                        }
+                    }
+                }
+
+            }
+
+            .main_tabs_list {
+                margin-top: 22px;
+            }
+
+
+            .committees_tabs_wrapper {
+                margin-top: 46px;
+
+                .committees_tabs_list {
+                    margin-top: 22px;
+                }
+            }
+
+            .workgroups_tabs_wrapper {
+                margin-top: 26px;
+
+                .workgroups_tabs_list {
+                    margin-top: 30px;
+
+                }
+            }
+        }
+
+        &.active_wrapper {
+            margin-top: 80px;
+
+            .mail_edit_inputs_wrapper {
+                position: relative;
+                height: 0px;
+                left: -100%;
+
+                transition:
+                    left .3s ease-in-out,
+                    all .3s ease-in-out;
+                display: none;
+            }
+
+            .mailings_recipients_select_wrapper {
+                opacity: 1;
+                right: 0;
+                height: 100%;
+            }
+        }
+    }
+
+    .mail_publication_wrapper {
+        display: flex;
+        align-items: center;
+        margin-top: 8px;
+
+        .mail_publication_main_wrapper {
+            display: flex;
+            align-items: center;
+
+            .datetime_picker {
+                padding: 6px 10px;
+                max-width: 150px;
+                margin-left: 18px;
+                border-width: 1px;
+                border-radius: 4px;
+
+                img {
+                    width: 22px;
+                }
+            }
+
+            .publicate_button {
+                background-color: #5979C4;
+                margin-left: 16px;
+                padding: 8px 10px;
+
+                img {
+                    margin-right: 10px;
+                    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1096%) hue-rotate(266deg) brightness(117%) contrast(100%);
+                }
+
+                p {
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+
+                &:hover {
+                    background-color: #879FD6;
+                }
+            }
+
+            // .publish_link {
+            //     padding: 6px 10px;
+            //     background-color: #5979C4;
+
+            //     img {
+            //         width: 24px;
+            //         filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1096%) hue-rotate(266deg) brightness(117%) contrast(100%);
+            //     }
+
+            //     p {
+            //         font-size: 18px;
+            //         font-weight: 500;
+            //     }
+
+            //     &:hover {
+            //         background-color: #879FD6;
+            //     }
+            // }
+
+            // .publish_link {
+            //     margin-left: 4px;
+            // }
+
+        }
+
+        .cancel_link {
+            padding: 6px 10px;
+            margin-left: auto;
+            background-color: #FF720B;
+
+            p {
+                color: #ffffff;
+            }
+
+            img {
+                margin-right: 10px;
+                width: 24px;
+                filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1096%) hue-rotate(266deg) brightness(117%) contrast(100%);
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            &:hover {
+                background-color: #FF8409;
+            }
+        }
+    }
+}
+
+.footer {
+    margin-top: 70px;
+}
+
+
+@media screen and (max-width: 1539px) {
+
+    .mail_edit_block {
+        .mail_edit_wrapper {
+
+            .mail_edit_inputs_wrapper {
+
+                grid-template-columns: auto min-content min-content;
+
+                .mail_edit_title {
+                    grid-column: 1 / 4;
+                }
+
+                .mail_edit_tag {
+                    grid-column: 1 / 2;
+                }
+
+                .mail_edit_recipients {
+                    order: 1;
+                    grid-column: 1 / 4;
+                }
+
+                .mail_editor_wrapper {
+                    order: 2;
+                    grid-column: 1 / 4;
+                }
+            }
+
+        }
+    }
+}
+
+
+@media screen and (max-width: 1239px) {
+    .mail_edit_block {
+        margin-top: 20px;
+
+        .mail_edit_wrapper {
+
+            .mailings_recipients_select_wrapper {
+
+                .main_tabs_list,
+                .committees_tabs_list,
+                .workgroups_tabs_list {
+                    row-gap: 20px;
+
+                    .tab {
+                        padding: 4px 8px;
+
+                        img {
+                            margin-right: 8px;
+                            margin-bottom: auto;
+                        }
+
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    .mail_edit_block {
+        .mail_edit_wrapper {
+
+            .mail_edit_inputs_wrapper {
+                grid-template-columns: auto auto;
+
+                .mail_edit_title {
+                    grid-column: 1 / 3;
+                }
+
+                .mail_edit_tag {
+                    order: 1;
+                    grid-column: 1 / 3;
+                }
+
+                .mail_edit_recipients {
+                    order: 1;
+                    grid-column: 1 / 3;
+                }
+
+                .mail_edit_tag {
+                    grid-column: 1 / 3;
+                }
+
+                .mail_editor_wrapper {
+                    order: 2;
+                    grid-column: 1 / 3;
+                }
+            }
+        }
+
+        .mail_publication_wrapper {
+            flex-wrap: wrap;
+
+            .cancel_link {
+                margin: 20px auto 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .mail_edit_block {
+
+        .page_title {
+            margin-bottom: 32px;
+        }
+
+        .mail_edit_wrapper {
+
+            .mail_edit_inputs_wrapper {
+                column-gap: 10px;
+
+
+                .mail_edit_recipients {
+                    .tags_menu_link {
+                        display: flex;
+                        justify-content: center;
+
+                        img {
+                            margin-right: 10px;
+                        }
+
+                        .tags_text {
+                            display: flex;
+                            overflow: visible;
+                            white-space: nowrap;
+                            font-size: 16px;
+                            font-weight: 700;
+                            width: auto;
+                            color: #879FD6;
+                        }
+
+                        .more_tags {
+                            display: none;
+                        }
+                    }
+                }
+
+                .mail_edit_vote {
+                    .mail_edit_vote_wrapper {
+                        column-gap: 10px;
+
+                        .custom_radio {
+
+                            span {
+                                margin-left: 6px;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .mailings_recipients_select_wrapper {
+
+                .mailings_recipients_select_top {
+                    .mailings_recipients {
+                        img {
+                            display: none;
+                        }
+
+                        p {
+                            margin-right: 0px;
+                        }
+                    }
+                }
+
+                .accept_button {
+                    margin: 30px auto 35px;
+
+                    svg,
+                    img {
+                        width: 18px;
+                    }
+
+                    span {
+                        font-size: 14px;
+                    }
+
+                }
+            }
+        }
+
+        .mail_publication_wrapper {
+
+            .mail_publication_main_wrapper {
+
+                display: grid;
+                grid-template-columns: auto auto;
+                width: 100%;
+
+                h4 {
+                    grid-column: 1 / 3;
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+
+                .datetime_picker {
+                    margin-left: 0px;
+                }
+
+                .publicate_button {
+                    margin-left: auto;
+
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .cancel_link {
+                width: 100%;
+                margin-top: 30px;
+                justify-content: center;
+
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 374px) {
+
+    .mail_edit_block {
+
+        .mail_publication_wrapper {
+
+            .mail_publication_main_wrapper {
+                grid-template-columns: auto;
+
+                h4 {
+                    display: flex;
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+
+                .publicate_button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
